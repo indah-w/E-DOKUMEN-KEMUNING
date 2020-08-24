@@ -39,7 +39,7 @@
 		    				<td>{{ $data->nama }}</td>
 		    				<td>{{ $data->alamat }}</td>
 		    				
-		    				<!-- <td>@include('partial.action', ['data' => $data, 'route'=>'fasilitas'])</td> -->
+		    				<td>@include('partial.action', ['data' => $data, 'route'=>'member'])</td>
 		    			</tr>
 		    			@endforeach
 		    		</tbody>

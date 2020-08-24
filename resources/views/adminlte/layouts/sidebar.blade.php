@@ -20,7 +20,6 @@
                         <p> Dashboard v</p>
                     </a>
                 </li>
-<<<<<<< HEAD
                 <li class="nav-header">MANAGEMENT KEMUNING</li>
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
@@ -30,29 +29,7 @@
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="{{ route('member.index') }}" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Member</p>
-                            </a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a href="{{ route('crud.create') }}" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Create</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('crud.edit') }}" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Edit</p>
-                            </a>
-                        </li> -->
-                    </ul>
                 </li>
-=======
->>>>>>> ec1ed9ca30df616d992bda0b1c175b88401b9779
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
