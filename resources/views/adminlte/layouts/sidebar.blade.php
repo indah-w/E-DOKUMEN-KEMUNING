@@ -20,36 +20,6 @@
                         <p> Dashboard </p>
                     </a>
                 </li>
-                {{-- <li class="nav-header">EXAMPLES</li>
-                <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-edit"></i>
-                        <p>
-                            CRUD
-                            <i class="fas fa-angle-left right"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="{{ route('crud') }}" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>List</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('crud.create') }}" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Create</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('crud.edit') }}" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Edit</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li> --}}
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
