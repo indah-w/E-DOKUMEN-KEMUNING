@@ -21,19 +21,18 @@ class MemberController extends Controller
         return redirect()->route('member.index')->with('status', 'Member Stored!!!')->with('success', true);
     }
 
-    public function edit(Member $member, $id) {
-        $member = Member::find($id);
+    public function edit(Member $member) {
         return view('member.edit', compact('member', 'status'));
     }
 
-    public function update(Request $request, Member $member, $id) {
-        $member = Member::find($id);
+    public function update(Request $request, Member $member) {
+
         $member->update($request->all());
         return redirect()->route('member.index')->with('status', 'Member updated!!!')->with('success', true);
     }
 
-    public function destroy(Member $member, $id) {
-        $member = Member::find($id);
+    public function destroy(Member $member) {
+        // $member = Member::find($id);
         $member->delete();
         return redirect()->route('member.index')->with('status', 'Member deleted!!!')->with('success', true);
     }
