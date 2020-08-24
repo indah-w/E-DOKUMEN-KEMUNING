@@ -20,6 +20,7 @@
                         <p> Dashboard v</p>
                     </a>
                 </li>
+<<<<<<< HEAD
                 <li class="nav-header">MANAGEMENT KEMUNING</li>
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
@@ -50,6 +51,8 @@
                         </li> -->
                     </ul>
                 </li>
+=======
+>>>>>>> ec1ed9ca30df616d992bda0b1c175b88401b9779
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
