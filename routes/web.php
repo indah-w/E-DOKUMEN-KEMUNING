@@ -28,4 +28,20 @@ Auth::routes(['only' => 'login']);
 Route::group(['middleware' => ['auth']], function () {
     Route::get('admin/dashboard', 'DashboardController@index');
 });
-// Route::get('/sites/datamember', 'DataMemberController@datamember');
+
+
+//Member
+Route::resource('member', 'MemberController');
+
+
+Route::get('/crud', function () {
+    return view('adminlte.crud.index');
+})->name('crud');
+
+Route::get('/crud/create', function () {
+    return view('adminlte.crud.create');
+})->name('crud.create');
+
+Route::get('/crud/edit', function () {
+    return view('adminlte.crud.edit');
+})->name('crud.edit');
