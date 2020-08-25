@@ -26,9 +26,11 @@
 		    			<tr>
 		    				<th>Tanggal</th>
 		    				<th>ID Member</th>
-		    				<th>Nama Member</th>
+		    				<th>Nama Kartu Keluarga</th>
 		    				<th>Alamat</th>
-		    				<th>No Telepon</th>
+							<th>No Telepon</th>
+							<th>Status Rumah</th>
+							<th>Jumlah Anak</th>
 							<th>Action</th>
 		    			</tr>
 		    		</thead>
@@ -37,9 +39,11 @@
 		    			<tr>
 		    				<td>{{ $data->created_at->toDateString() }}</td>
 		    				<td>{{ $data->id }}</td>
-		    				<td>{{ $data->nama }}</td>
+		    				<td>{{ $data->nama_kartu_keluarga }}</td>
 		    				<td>{{ $data->alamat }}</td>
-		    				<td>{{ $data->no_telepon }}</td>
+							<td>{{ $data->no_telepon }}</td>
+							<td>{{ $data->status_rumah }}</td>
+							<td>{{ $data->jumlah_anak }}</td>
 		    				<td>@include('partial.action', ['data' => $data, 'route'=>'member'])</td>
 		    			</tr>
 		    			@endforeach

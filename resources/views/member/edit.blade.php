@@ -18,12 +18,12 @@
                     {{ method_field('PUT') }}
 		    		@csrf
                     <div class="form-group row">
-                        <label for="nama" class="col-md-3 col-form-label text-md-right">{{ __('Nama') }}</label>
+                        <label for="nama_kartu_keluarga" class="col-md-3 col-form-label text-md-right">{{ __('Nama Kartu Keluarga') }}</label>
 
                         <div class="col-md-7">
-                            <input id="nama" type="text" class="form-control @error('nama') is-invalid @enderror" name="nama" value="{{ $member->nama }}" required autocomplete="nama" autofocus>
+                            <input id="nama_kartu_keluarga" type="text" class="form-control @error('nama_kartu_keluarga') is-invalid @enderror" name="nama_kartu_keluarga" value="{{ $member->nama_kartu_keluarga }}" required autocomplete="nama_kartu_keluarga" autofocus>
 
-                            @error('nama')
+                            @error('nama_kartu_keluarga')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -52,6 +52,34 @@
                             <input id="no_telepon" type="number" class="form-control @error('no_telepon') is-invalid @enderror" name="no_telepon" value="{{ $member->no_telepon }}" required autocomplete="no_telepon" autofocus>
 
                             @error('no_telepon')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="status_rumah" class="col-md-3 col-form-label text-md-right">{{ __('Status Rumah') }}</label>
+
+                        <div class="col-md-7">
+                            <input id="status_rumah" type="number" class="form-control @error('status_rumah') is-invalid @enderror" name="status_rumah" value="{{ $member->status_rumah }}" required autocomplete="status_rumah" autofocus>
+
+                            @error('status_rumah')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="jumlah_anak" class="col-md-3 col-form-label text-md-right">{{ __('Jumlah Anak') }}</label>
+
+                        <div class="col-md-7">
+                            <input id="jumlah_anak" type="number" class="form-control @error('jumlah_anak') is-invalid @enderror" name="jumlah_anak" value="{{ $member->jumlah_anak }}" required autocomplete="jumlah_anak" autofocus>
+
+                            @error('jumlah_anak')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
