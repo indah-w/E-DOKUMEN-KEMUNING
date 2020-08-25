@@ -9,6 +9,6 @@ class Member extends Model
     protected $table = 'member';
 
     protected $fillable = [
-        'nama', 'alamat'
+        'nama', 'alamat', 'no_telepon'
     ];
 }

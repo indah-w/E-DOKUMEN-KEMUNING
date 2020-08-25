@@ -1,6 +1,6 @@
 @extends('adminlte.layouts.app')
 
-@section('title', 'List Member')
+@section('title', 'List Report Kampung Kemuning')
 
 {{-- Custom CSS --}}
 @push('css')
@@ -14,33 +14,39 @@
 	<div class="col-md-12">
 		<div class="card">
 		    <div class="card-header">
-		        <h3 class="card-title">List Member</h3>
+		        <h3 class="card-title">List Report Kampung Kemuning</h3>
 		    </div>
 		    <div class="card-body">
 		    	<!-- @include('partial.alert') -->
 		    	<p>
-		    		<a href="{{ route('member.create') }}" class="btn btn-primary">Tambah Data Member</a>
+		    		<a href="{{ route('report.create') }}" class="btn btn-primary">Tambah Data Report</a>
 		    	</p>
 		    	<table class="table" id="example1">
 		    		<thead>
 		    			<tr>
 		    				<th>Tanggal</th>
-		    				<th>ID Member</th>
-		    				<th>Nama Member</th>
-		    				<th>Alamat</th>
-		    				<th>No Telepon</th>
+		    				<th>ID Report</th>
+		    				<th>Jumlah Rumah Tetap</th>
+		    				<th>Jumlah Rumah Kontrak</th>
+		    				<th>Jumlah Anak-anak</th>
+                            <th>Jumlah Tempat Sampah</th>
+                            <th>Jumlah Biopori</th>
+                            <th>Total Anggota Bank Sampah</th>
 							<th>Action</th>
 		    			</tr>
 		    		</thead>
 		    		<tbody>
-		    			@foreach($member as $data)
+		    			@foreach($report as $data)
 		    			<tr>
 		    				<td>{{ $data->created_at->toDateString() }}</td>
 		    				<td>{{ $data->id }}</td>
-		    				<td>{{ $data->nama }}</td>
-		    				<td>{{ $data->alamat }}</td>
-		    				<td>{{ $data->no_telepon }}</td>
-		    				<td>@include('partial.action', ['data' => $data, 'route'=>'member'])</td>
+		    				<td>{{ $data->jumlah_rumah_tetap }}</td>
+		    				<td>{{ $data->jumlah_rumah_kontrak }}</td>
+		    				<td>{{ $data->jumlah_anak }}</td>
+                            <td>{{ $data->jumlah_tempat_sampah }}</td>
+                            <td>{{ $data->jumlah_biopori }}</td>
+                            <td>{{ $data->jumlah_anggota_bs }}</td>
+		    				<td>@include('partial.action', ['data' => $data, 'route'=>'report'])</td>
 		    			</tr>
 		    			@endforeach
 		    		</tbody>

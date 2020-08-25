@@ -32,8 +32,17 @@
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="{{ route('member.index') }}" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Data Member</p>
+                                <i class="fa fa-file-alt"></i>
+                                <p> Data Member</p>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('report.index') }}" class="nav-link">
+                                <i class="fa fa-file-alt"></i>
+                                <p> Data Report</p>
                             </a>
                         </li>
                     </ul>

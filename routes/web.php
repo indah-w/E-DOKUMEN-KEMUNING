@@ -33,6 +33,9 @@ Route::group(['middleware' => ['auth']], function () {
 //Member
 Route::resource('member', 'MemberController');
 
+//Report
+Route::resource('report', 'ReportController');
+
 
 Route::get('/crud', function () {
     return view('adminlte.crud.index');

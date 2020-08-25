@@ -17,6 +17,7 @@ class CreateMemberTable extends Migration
             $table->bigIncrements('id');
             $table->string('nama', 30);
             $table->string('alamat', 50); 
+            $table->string('no_telepon', 12);
             $table->timestamps();
         });
     }
