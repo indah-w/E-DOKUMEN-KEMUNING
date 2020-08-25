@@ -36,6 +36,9 @@ Route::resource('member', 'MemberController');
 //Report
 Route::resource('report', 'ReportController');
 
+//Kegiatan
+Route::resource('kegiatan', 'KegiatanController');
+
 
 Route::get('/crud', function () {
     return view('adminlte.crud.index');
