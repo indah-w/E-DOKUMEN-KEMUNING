@@ -14,7 +14,7 @@
 		        <h3 class="card-title">Edit Kegiatan</h3>
 		    </div>
 		    <div class="card-body">
-		    	<form action="{{ route('kegiatan.update', $kegiatan->id) }}" method="POST" enctype="multipart/form-data">
+		    	<form action="{{ route('kegiatan.update', $kegiatan->id) }}" method="POST" enctype="multipart/form-data"> 
                     {{ method_field('PATCH') }}
 		    		@csrf
                     <div class="form-group row">

@@ -64,6 +64,15 @@
                             </a>
                         </li>
                     </ul>
+
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('dokumen.index') }}" class="nav-link">
+                                <i class="fa fa-file-alt"></i>
+                                <p> Data Dokumen</p>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </nav>
