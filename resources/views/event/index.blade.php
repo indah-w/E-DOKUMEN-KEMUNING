@@ -26,6 +26,7 @@
 		    			<tr>
 		    				<th>Tanggal</th>
                             <th>ID Event</th>
+							<th>Foto</th>
 		    				<th>Nama Event</th>
                             <th>Tanggal Event</th>
                             <th>Harga Event</th>
@@ -39,12 +40,13 @@
 		    			<tr>
 		    				<td>{{ $data->created_at->toDateString() }}</td>
 		    				<td>{{ $data->id }}</td>
+							<td>{{ $data->foto }}</td>
 		    				<td>{{ $data->nama_event }}</td>
 		    				<td>{{ $data->tanggal_event }}</td>
 							<td>{{ $data->harga_event }}</td>
                             <td>{{ $data->lokasi }}</td>
                             <td>{{ $data->keterangan }}</td>
-		    				<td>@include('partial.action', ['data' => $data, 'route'=>'kegiatan'])</td>
+		    				<td>@include('partial.action', ['data' => $data, 'route'=>'event'])</td>
 		    			</tr>
 		    			@endforeach
 		    		</tbody>

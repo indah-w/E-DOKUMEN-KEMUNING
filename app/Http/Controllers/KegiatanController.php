@@ -31,7 +31,7 @@ class KegiatanController extends Controller
      */
     public function create()
     {
-        $status = ['Harian', 'Bulanan', 'Tahunan'];
+        // $status = ['Harian', 'Bulanan', 'Tahunan'];
         return view('kegiatan.create', compact('status'));
     }
 
@@ -81,7 +81,7 @@ class KegiatanController extends Controller
      */
     public function edit(Kegiatan $kegiatan)
     {
-        $status = ['Harian', 'Bulanan'];
+        // $status = ['Harian', 'Bulanan'];
         return view('kegiatan.edit', compact('kegiatan', 'status'));
     }
 

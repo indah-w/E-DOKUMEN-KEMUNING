@@ -18,12 +18,12 @@
                     {{ method_field('PATCH') }}
 		    		@csrf
                     <div class="form-group row">
-                        <label for="image" class="col-md-3 col-form-label text-md-right">{{ __('Foto/Video') }}</label>
+                        <label for="foto" class="col-md-3 col-form-label text-md-right">{{ __('Foto/Video') }}</label>
 
                         <div class="col-md-7">
-                            <input id="image" type="file" accept="image/x-png,image/gif,image/jpeg" class="form-control @error('image') is-invalid @enderror" name="image" value="{{ old('image') }}" autocomplete="image" autofocus>
+                            <input id="foto" type="file" accept="image/x-png,image/gif,image/jpeg" class="form-control @error('foto') is-invalid @enderror" name="foto" value="{{ old('foto') }}" autocomplete="foto" autofocus>
 
-                            @error('image')
+                            @error('foto')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>

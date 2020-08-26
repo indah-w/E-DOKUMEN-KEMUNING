@@ -15,7 +15,7 @@ class CreateKegiatanTable extends Migration
     {
         Schema::create('kegiatan', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('image')->nullable();
+            $table->string('foto')->nullable();
             $table->string('nama_kegiatan', 50); 
             $table->date('tanggal_kegiatan', 12);
             $table->timestamps();

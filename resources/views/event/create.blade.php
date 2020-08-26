@@ -11,11 +11,26 @@
 	<div class="col-md-12">
 		<div class="card">
 		    <div class="card-header">
-		        <h3 class="card-title">Create Kegiatan</h3>
+		        <h3 class="card-title">Create Event</h3>
 		    </div>
 		    <div class="card-body">
 		    	<form action="{{ route('event.store') }}" method="POST">
 		    		@csrf
+
+                    <div class="form-group row">
+                        <label for="foto" class="col-md-3 col-form-label text-md-right">{{ __('Foto ') }}</label>
+
+                        <div class="col-md-7">
+                            <input id="foto" type="file" accept="foto/x-png,foto/gif,foto/jpeg" class="form-control @error('foto') is-invalid @enderror" name="foto" value="{{ old('foto') }}" required autocomplete="foto" autofocus>
+
+                            @error('foto')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                    </div>
+
                     <div class="form-group row">
                         <label for="nama_event" class="col-md-3 col-form-label text-md-right">{{ __('Nama Event') }}</label>
 
