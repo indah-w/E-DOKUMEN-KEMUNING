@@ -55,8 +55,8 @@ class EventController extends Controller
             $destinationPath = public_path() . DIRECTORY_SEPARATOR . 'img';
             $uploaded_foto->move($destinationPath, $filename);
             // mengisi field cover di book dengan filename yang baru dibuat
-            $kegiatan->foto = $filename;
-            $kegiatan->save();
+            $event->foto = $filename;
+            $event->save();
         }
 
         return redirect()->route('event.index')->with('status', 'Event stored!')->with('success', true);
