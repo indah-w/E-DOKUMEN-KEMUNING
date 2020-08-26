@@ -39,6 +39,9 @@ Route::resource('report', 'ReportController');
 //Kegiatan
 Route::resource('kegiatan', 'KegiatanController');
 
+//Event
+Route::resource('event', 'EventController');
+
 
 Route::get('/crud', function () {
     return view('adminlte.crud.index');

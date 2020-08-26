@@ -8,6 +8,5 @@ class Kegiatan extends Model
 {
     protected $table = 'kegiatan';
 
-    protected $fillable = [
-        'type_file', 'nama_kegiatan', 'tanggal_kegiatan'];
+    protected $fillable = ['image', 'nama_kegiatan', 'tanggal_kegiatan'];
 }

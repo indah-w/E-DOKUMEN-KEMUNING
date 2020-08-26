@@ -8,21 +8,21 @@
 
 @section('content')
 <div class="row container-fluid d-flex justify-content-center">
-	<div class="col-md-12">
+	<div class="col-md-6">
 		<div class="card">
 		    <div class="card-header">
 		        <h3 class="card-title">Create Kegiatan</h3>
 		    </div>
 		    <div class="card-body">
-		    	<form action="{{ route('kegiatan.store') }}" method="POST">
+		    	<form action="{{ route('kegiatan.store') }}" method="POST" enctype="multipart/form-data">
 		    		@csrf
                     <div class="form-group row">
-                        <label for="type_file" class="col-md-3 col-form-label text-md-right">{{ __('Type File') }}</label>
+                        <label for="image" class="col-md-3 col-form-label text-md-right">{{ __('Foto/Video ') }}</label>
 
                         <div class="col-md-7">
-                            <input id="type_file" type="text" class="form-control @error('type_file') is-invalid @enderror" name="type_file" value="{{ old('type_file') }}" required autocomplete="type_file" autofocus>
+                            <input id="image" type="file" accept="image/x-png,image/gif,image/jpeg" class="form-control @error('image') is-invalid @enderror" name="image" value="{{ old('image') }}" required autocomplete="image" autofocus>
 
-                            @error('type_file')
+                            @error('image')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -31,7 +31,7 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="nama_kegiatan" class="col-md-3 col-form-label text-md-right">{{ __('Nama Kegiatan') }}</label>
+                        <label for="nama_kegiatan_kegiatan" class="col-md-3 col-form-label text-md-right">{{ __('Nama Kegiatan') }}</label>
 
                         <div class="col-md-7">
                             <input id="nama_kegiatan" type="text" class="form-control @error('nama_kegiatan') is-invalid @enderror" name="nama_kegiatan" value="{{ old('nama_kegiatan') }}" required autocomplete="nama_kegiatan" autofocus>
@@ -58,10 +58,9 @@
                         </div>
                     </div>
 
-
                     <div class="form-group row mb-0">
-                        <div class="col-md-6 offset-md-4 ">
-                            <button type="submit" class="btn btn-primary float-right">
+                        <div class="col-md-6 offset-md-3">
+                            <button type="submit" class="btn btn-primary">
                                 {{ __('Save') }}
                             </button>
                         </div>
@@ -72,5 +71,3 @@
 	</div>
 </div>
 @endsection
-@push('js')
-@endpush

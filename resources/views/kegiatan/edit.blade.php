@@ -8,22 +8,36 @@
 
 @section('content')
 <div class="row container-fluid d-flex justify-content-center">
-	<div class="col-md-12">
+	<div class="col-md-6">
 		<div class="card">
 		    <div class="card-header">
 		        <h3 class="card-title">Edit Kegiatan</h3>
 		    </div>
 		    <div class="card-body">
-		    	<form action="{{ route('kegiatan.update', $kegiatan->id) }}" method="POST">
-                    {{ method_field('PUT') }}
+		    	<form action="{{ route('kegiatan.update', $kegiatan->id) }}" method="POST" enctype="multipart/form-data">
+                    {{ method_field('PATCH') }}
 		    		@csrf
                     <div class="form-group row">
-                        <label for="type_file" class="col-md-3 col-form-label text-md-right">{{ __('Type File') }}</label>
+                        <label for="image" class="col-md-3 col-form-label text-md-right">{{ __('Foto/Video') }}</label>
 
                         <div class="col-md-7">
-                            <input id="type_file" type="text" class="form-control @error('type_file') is-invalid @enderror" name="type_file" value="{{ $member->type_file }}" required autocomplete="type_file" autofocus>
+                            <input id="image" type="file" accept="image/x-png,image/gif,image/jpeg" class="form-control @error('image') is-invalid @enderror" name="image" value="{{ old('image') }}" autocomplete="image" autofocus>
 
-                            @error('type_file')
+                            @error('image')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="nama_kegiatan" class="col-md-3 col-form-label text-md-right">{{ __('Nama Kegiatan') }}</label>
+
+                        <div class="col-md-7">
+                            <input id="nama_kegiatan" type="text" class="form-control @error('nama_kegiatan') is-invalid @enderror" name="nama_kegiatan" value="{{ $kegiatan->nama_kegiatan }}" required autocomplete="nama_kegiatan" autofocus>
+
+                            @error('nama_kegiatan')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -35,7 +49,7 @@
                         <label for="tanggal_kegiatan" class="col-md-3 col-form-label text-md-right">{{ __('Tanggal Kegiatan') }}</label>
 
                         <div class="col-md-7">
-                            <input id="tanggal_kegiatan" type="text" class="form-control @error('tanggal_kegiatan') is-invalid @enderror" name="tanggal_kegiatan" value="{{ $member->tanggal_kegiatan }}" required autocomplete="tanggal_kegiatan" autofocus>
+                            <input id="tanggal_kegiatan" type="text" class="form-control @error('tanggal_kegiatan') is-invalid @enderror" name="tanggal_kegiatan" value="{{ $kegiatan->tanggal_kegiatan }}" required autocomplete="tanggal_kegiatan" autofocus>
 
                             @error('tanggal_kegiatan')
                                 <span class="invalid-feedback" role="alert">
