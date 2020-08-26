@@ -14,7 +14,7 @@
 		        <h3 class="card-title">Create Event</h3>
 		    </div>
 		    <div class="card-body">
-		    	<form action="{{ route('event.store') }}" method="POST">
+		    	<form action="{{ route('event.store') }}" method="POST" enctype="multipart/form-data">
 		    		@csrf
 
                     <div class="form-group row">
