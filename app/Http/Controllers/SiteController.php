@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Kegiatan;
 use Illuminate\Http\Request;
 
 class SiteController extends Controller
@@ -19,10 +20,13 @@ class SiteController extends Controller
     {
         return view('layouts.events');
     }
+    
     public function kegiatan()
     {
-        return view('layouts.kegiatan');
+        $kegiatan = Kegiatan::all();
+        return view('layouts.kegiatan',  compact('kegiatan'));
     }
+
     public function artikel()
     {
         return view('layouts.artikel');

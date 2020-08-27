@@ -86,6 +86,17 @@
                         </div>
                     </div>
 
+                    <div class="form-group row">
+                        <label for="memiliki_tempat_sampah" class="col-md-3 col-form-label text-md-right">{{ __('Memiliki Tempat Sampah') }}</label>
+
+                        <div class="col-md-7">
+                            <input type="radio" id="memiliki_tempat_sampah" name="memiliki_tempat_sampah" value="Ya">
+                            <label for="Ya">Ya</label><br>
+                            <input type="radio" id="memiliki_tempat_sampah" name="memiliki_tempat_sampah" value="Tidak">
+                            <label for="Tidak">Tidak</label><br>
+                        </div>
+                    </div>
+
                     <div class="form-group row mb-0">
                         <div class="col-md-6 offset-md-4 ">
                             <button type="submit" class="btn btn-primary float-right">

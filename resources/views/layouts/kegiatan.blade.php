@@ -88,17 +88,19 @@
         <section class="gallery-area section-gap">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-7">
-                        <a href="{{asset('/frontend')}}/img/gallery/g1.jpg" class="img-gal">
+                    @foreach($kegiatan as $data) 
+                    <div class="col-lg-4">
+                        <a href="/img/{{$data->foto}}" class="img-gal">
                             <div class="single-imgs relative">		
                                 <div class="overlay overlay-bg"></div>
                                 <div class="relative">				
-                                    <img class="img-fluid" src="{{asset('/frontend')}}/img/gallery/g1.jpg" alt="">		
+                                    <img class="img-fluid" src="/img/{{$data->foto}}" alt="">		
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-5">
+                    @endforeach
+                    <!-- <div class="col-lg-5">
                         <a href="{{asset('/frontend')}}/img/gallery/g2.jpg" class="img-gal">
                             <div class="single-imgs relative">		
                                 <div class="overlay overlay-bg"></div>
@@ -157,7 +159,7 @@
                                 </div>
                             </div>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
             </div>	
         </section>

@@ -20,6 +20,7 @@ class CreateMemberTable extends Migration
             $table->string('no_telepon', 12);
             $table->string('status_rumah', 30);
             $table->string('jumlah_anak', 30);
+            $table->string('memiliki_tempat_sampah', 5);
             $table->timestamps();
         });
     }

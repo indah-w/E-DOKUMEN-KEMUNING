@@ -26,7 +26,8 @@
 		    	<table class="table" id="example1">
 		    		<thead>
 		    			<tr>
-		    				<th>ID</th>
+							<th>Tanggal</th>
+		    				<th>ID Dokumen</th>
 		    				<th>Nama File</th>
 		    				<th>Nama Dokumen</th>
 		    				<th>Type File</th>

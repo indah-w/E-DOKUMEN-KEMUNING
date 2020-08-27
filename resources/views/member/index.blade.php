@@ -32,6 +32,7 @@
 							<th>No Telepon</th>
 							<th>Status Rumah</th>
 							<th>Jumlah Anak</th>
+							<th>Memiliki Tempat Sampah</th>
 							<th>Action</th>
 		    			</tr>
 		    		</thead>
@@ -45,6 +46,7 @@
 							<td>{{ $data->no_telepon }}</td>
 							<td>{{ $data->status_rumah }}</td>
 							<td>{{ $data->jumlah_anak }}</td>
+							<td>{{ $data->memiliki_tempat_sampah }}</td>
 		    				<td>@include('partial.action', ['data' => $data, 'route'=>'member'])</td>
 		    			</tr>
 		    			@endforeach

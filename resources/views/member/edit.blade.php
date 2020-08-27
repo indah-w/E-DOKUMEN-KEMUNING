@@ -63,7 +63,7 @@
                         <label for="status_rumah" class="col-md-3 col-form-label text-md-right">{{ __('Status Rumah') }}</label>
 
                         <div class="col-md-7">
-                            <input id="status_rumah" type="number" class="form-control @error('status_rumah') is-invalid @enderror" name="status_rumah" value="{{ $member->status_rumah }}" required autocomplete="status_rumah" autofocus>
+                            <input id="status_rumah" type="text" class="form-control @error('status_rumah') is-invalid @enderror" name="status_rumah" value="{{ $member->status_rumah }}" required autocomplete="status_rumah" autofocus>
 
                             @error('status_rumah')
                                 <span class="invalid-feedback" role="alert">
@@ -84,6 +84,17 @@
                                     <strong>{{ $message }}</strong>
                                 </span>
                             @enderror
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="jumlah_anak" class="col-md-3 col-form-label text-md-right">{{ __('Memiliki Tempat Sampah') }}</label>
+
+                        <div class="col-md-7">
+                            <input type="radio" id="memiliki_tempat_sampah" name="memiliki_tempat_sampah" value="Ya">
+                            <label for="Ya">Ya</label><br>
+                            <input type="radio" id="memiliki_tempat_sampah" name="memiliki_tempat_sampah" value="Tidak">
+                            <label for="Tidak">Tidak</label><br>    
                         </div>
                     </div>
 
