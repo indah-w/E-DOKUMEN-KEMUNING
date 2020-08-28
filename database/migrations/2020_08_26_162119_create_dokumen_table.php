@@ -17,7 +17,7 @@ class CreateDokumenTable extends Migration
             $table->bigIncrements('id');
             $table->string('file')->nullable();
             $table->string('nama_dokumen', 30);
-            $table->date('type_file', 50); 
+            $table->string('type_file', 50); 
             $table->text('keterangan', 30);
             $table->timestamps();
         });
