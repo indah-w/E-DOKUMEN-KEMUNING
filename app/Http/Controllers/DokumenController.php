@@ -50,4 +50,5 @@ class DokumenController extends Controller
         $dokumen->delete();
         return redirect()->route('dokumen.index')->with('status', 'Dokumen deleted!!!')->with('success', true);
     }
+
 }

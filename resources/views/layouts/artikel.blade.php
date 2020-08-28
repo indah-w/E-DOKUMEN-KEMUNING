@@ -87,60 +87,23 @@
         <!-- Start events-list Area -->
         <section class="events-list-area section-gap event-page-lists">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 pb-30">
-                        <div class="single-carusel row align-items-center">
+                <div class="row ">
+                    <div class="col-lg-12 pb-30">
+                        @foreach($artikel as $data)
+                        <div class="single-carusel row ">
                             <div class="col-12 col-md-6 thumb">
-                                <img class="img-fluid" src="{{asset('/frontend')}}/img/artikel1.jpg" alt="">
-                            </div>
-                            <div class="detials col-12 col-md-6">
-                                <a href="{{url('sites/artikeldetail')}}"><h4>Pentingnya Menjaga Lingkungan Hidup</h4></a>
-                                <p>
+                                <a href="{{url('sites/artikeldetail')}}"><h4>{{$data->nama_artikel}}</h4></a>
+                                <img class="img-fluid" src="/img/{{$data->foto}}" alt="">
+                                <p style="margin-top: 20">
                                     Lingkungan hidup perlu kita lestarikan untuk menjaga keseimbangan alam dan kelangsungan hidup manusia. Salah satunya dengan membiasakan diri untuk memelihara kebersihan di lingkungan sekitar kita.
                                 </p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 pb-30">
-                        <div class="single-carusel row align-items-center">
-                            <div class="col-12 col-md-6 thumb">
-                                <img class="img-fluid" src="{{asset('/frontend')}}/img/artikel2.jpg" alt="">
-                            </div>
                             <div class="detials col-12 col-md-6">
-                                <a href="{{url('sites/artikeldetail')}}"><h4>Festival Hari Kemerdekaan</h4></a>
-                                <p>
-                                    Kampung hijau kemuning menyelenggarakan 17 agustusan yang di hadiri oleh semua warga
-                                </p>
+                                
+                                
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 pb-30">
-                        <div class="single-carusel row align-items-center">
-                            <div class="col-12 col-md-6 thumb">
-                                <img class="img-fluid" src="{{asset('/frontend')}}/img/events3.jpg" alt="">
-                            </div>
-                            <div class="detials col-12 col-md-6">
-                                <p>25th February, 2020</p>
-                                <a href="{{url('sites/eventsdetail')}}"><h4>Seminar Daur Ulang Sampah</h4></a>
-                                <p>
-                                    Untuk menghindari penumpukan sampah kampung hijau kemuning mengadakan seminar daur ulang sampah yang terbuka untuk umum.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 pb-30">
-                        <div class="single-carusel row align-items-center">
-                            <div class="col-12 col-md-6 thumb">
-                                <img class="img-fluid" src="{{asset('/frontend')}}/img/events4.jpg" alt="">
-                            </div>
-                            <div class="detials col-12 col-md-6">
-                                <p>8th Juli, 2020</p>
-                                <a href="{{url('sites/eventsdetail')}}"><h4>Seminar Penanaman Pohon</h4></a>
-                                <p>
-                                    Untuk melestarikan bumi agar tetap hijau kampung hijau kemuning mengadakan seminar penanaman pohon.
-                                </p>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>																		
                             
                 </div>

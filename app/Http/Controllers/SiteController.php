@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Kegiatan;
 use App\Event;
+use App\Artikel;
 use Illuminate\Http\Request;
 
 class SiteController extends Controller
@@ -40,7 +41,8 @@ class SiteController extends Controller
 
     public function artikel()
     {
-        return view('layouts.artikel');
+        $artikel = Artikel::all();
+        return view('layouts.artikel', compact('artikel'));
     }
 
     public function kontak()
