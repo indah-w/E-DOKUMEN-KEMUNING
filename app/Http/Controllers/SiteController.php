@@ -3,24 +3,35 @@
 namespace App\Http\Controllers;
 
 use App\Kegiatan;
+use App\Event;
 use Illuminate\Http\Request;
 
 class SiteController extends Controller
 {
     public function home()
-    {
-        return view('sites.home');
+    {   
+        $kegiatan = Kegiatan::all();
+        $event = Event::all();
+        return view('sites.home', compact('kegiatan', 'event'));
     }
 
     public function tentang()
     {
         return view('layouts.tentang');
     }
-    public function events()
+
+    public function event()
     {
-        return view('layouts.events');
+        $event = Event::all();
+        return view('layouts.event', compact('event'));
     }
-    
+
+    public function eventdetail()
+    {
+        $event = Event::all();
+        return view('layouts.eventdetail', compact('event'));
+    }
+
     public function kegiatan()
     {
         $kegiatan = Kegiatan::all();
@@ -31,12 +42,10 @@ class SiteController extends Controller
     {
         return view('layouts.artikel');
     }
+
     public function kontak()
     {
         return view('layouts.kontak');
     }
-    public function eventsdetail()
-    {
-        return view('layouts.eventsdetail');
-    }
+
 }

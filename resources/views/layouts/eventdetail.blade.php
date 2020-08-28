@@ -57,7 +57,7 @@
                 <ul class="nav-menu">
                   <li><a href="/beranda">Beranda</a></li>
                   <li><a href="{{url('sites/tentang')}}">Tentang</a></li>
-                  <li><a href="{{url('sites/events')}}">Events</a></li>
+                  <li><a href="{{url('sites/event')}}">Events</a></li>
                   <li><a href="{{url('sites/kegiatan')}}">Kegiatan</a></li>
                   <li><a href="{{url('sites/artikel')}}">Artikel</a></li>
                   <li><a href="{{url('sites/informasi')}}">Informasi</a></li>						          					          		          
@@ -88,41 +88,31 @@
         <section class="event-details-area section-gap">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 event-details-left">
+                @foreach($event as $data)
+                    <div class="col-lg-7 event-details-left">
                         <div class="main-img">
-                            <img class="img-fluid" src="{{asset('/frontend')}}/img/events1.jpg" alt="">
+                            <img class="img-fluid" src="/img/{{$data->foto}}" alt="">
                         </div>
                         <div class="details-content">
                             <a href="#">
-                                <h4>Festival Hari Kartini</h4>
+                                <h4>{{$data->nama_event}}</h4>
                             </a>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.									
+                                {{$data->keterangan}}
                             </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolorema gna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.									
-                            </p>
-                        </div>
-                        <div class="social-nav row no-gutters">
-                            <div class="col-lg-6 col-md-6 ">
-                                <ul class="focials">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 event-details-right">
+                    <div class="col-lg-5 event-details-right">
                         <div class="single-event-details">
                             <h4>Details</h4>
                             <ul class="mt-10">
                                 <li class="justify-content-between d-flex">
-                                    <span>Tanggal Mulai</span>
-                                    <span>21th April, 2020</span>
+                                    <span>Tanggal Mulai :</span>
+                                    <span>{{$data->tanggal_event}}</span>
                                 </li>
                                 <li class="justify-content-between d-flex">
-                                    <span>Harga Tiket</span>
-                                    <span>Tidak Dikenakan Biaya</span>
+                                    <span>Harga Tiket :</span>
+                                    <span>Rp {{$data->harga_event}}</span>
                                 </li>														
                             </ul>
                         </div>
@@ -130,11 +120,20 @@
                             <h4>Lokasi</h4>
                             <ul class="mt-10">
                                 <li class="justify-content-between d-flex">
-                                    <span>Tempat Pelaksanaan</span>
-                                    <span>Balai Warga</span>
+                                    <span>Tempat Pelaksanaan :</span>
+                                    <span>{{$data->lokasi}}</span>
                                 </li>										
                             </ul>
                         </div>														
+                    </div>
+                    @endforeach
+                    <div class="social-nav row no-gutters">
+                        <div class="row-lg-6 row-md-6 ">
+                            <ul class="focials">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            </ul>                          
+                            </div>
                     </div>
                 </div>
             </div>	

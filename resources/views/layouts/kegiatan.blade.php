@@ -57,7 +57,7 @@
                 <ul class="nav-menu">
                   <li><a href="/beranda">Beranda</a></li>
                   <li><a href="{{url('sites/tentang')}}">Tentang</a></li>
-                  <li><a href="{{url('sites/events')}}">Events</a></li>
+                  <li><a href="{{url('sites/event')}}">Events</a></li>
                   <li><a href="{{url('sites/kegiatan')}}">Kegiatan</a></li>
                   <li><a href="{{url('sites/artikel')}}">Artikel</a></li>	
                   <li><a href="{{url('sites/informasi')}}">Informasi</a></li>					          					          		          
@@ -94,7 +94,9 @@
                             <div class="single-imgs relative">		
                                 <div class="overlay overlay-bg"></div>
                                 <div class="relative">				
-                                    <img class="img-fluid" src="/img/{{$data->foto}}" alt="">		
+                                    <img class="img-fluid" src="/img/{{$data->foto}}" alt="">
+                                    <p>{{$data->tanggal_kegiatan}}</p>
+                                    <p>{{$data->nama_kegiatan}}</p>		
                                 </div>
                             </div>
                         </a>

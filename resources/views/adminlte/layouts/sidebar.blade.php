@@ -29,6 +29,16 @@
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
+
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('artikel.index') }}" class="nav-link">
+                                <i class="fa fa-file-alt"></i>
+                                <p> Data Artikel</p>
+                            </a>
+                        </li>
+                    </ul>
+
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="{{ route('member.index') }}" class="nav-link">

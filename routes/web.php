@@ -14,11 +14,11 @@
 Route::get('/', 'SiteController@home');
 Route::get('/beranda', 'SiteController@home');
 Route::get('/sites/tentang', 'SiteController@tentang');
-Route::get('/sites/events', 'SiteController@events');
+Route::get('/sites/event', 'SiteController@event');
 Route::get('/sites/kegiatan', 'SiteController@kegiatan');
 Route::get('/sites/artikel', 'SiteController@artikel');
 Route::get('/sites/kontak', 'SiteController@kontak');
-Route::get('/sites/eventsdetail', 'SiteController@eventsdetail');
+Route::get('/sites/eventdetail', 'SiteController@eventdetail');
 
 Route::get('/dashboard/buatanggota', function() {
     return view('/dashboard/buatanggota');
@@ -45,15 +45,18 @@ Route::resource('event', 'EventController');
 //Dokumen
 Route::resource('dokumen', 'DokumenController');
 
+//Artikel
+Route::resource('artikel', 'ArtikelController');
 
-Route::get('/crud', function () {
-    return view('adminlte.crud.index');
-})->name('crud');
 
-Route::get('/crud/create', function () {
-    return view('adminlte.crud.create');
-})->name('crud.create');
+// Route::get('/crud', function () {
+//     return view('adminlte.crud.index');
+// })->name('crud');
 
-Route::get('/crud/edit', function () {
-    return view('adminlte.crud.edit');
-})->name('crud.edit');
+// Route::get('/crud/create', function () {
+//     return view('adminlte.crud.create');
+// })->name('crud.create');
+
+// Route::get('/crud/edit', function () {
+//     return view('adminlte.crud.edit');
+// })->name('crud.edit');

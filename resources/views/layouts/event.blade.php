@@ -57,7 +57,7 @@
 			        <ul class="nav-menu">
 			          <li><a href="/beranda">Beranda</a></li>
 			          <li><a href="{{url('sites/tentang')}}">Tentang</a></li>
-			          <li><a href="{{url('sites/events')}}">Events</a></li>
+			          <li><a href="{{url('sites/event')}}">Events</a></li>
 			          <li><a href="{{url('sites/kegiatan')}}">Kegiatan</a></li>
 					  <li><a href="{{url('sites/artikel')}}">Artikel</a></li>
 					  <li><a href="{{url('sites/informasi')}}">Informasi</a></li>	
@@ -85,68 +85,31 @@
 			<!-- End banner Area -->	
 				
 			<!-- Start events-list Area -->
+			
 			<section class="events-list-area section-gap event-page-lists">
+			
 				<div class="container">
+					<p>Event Seru di Kampung Kemuning</p>
+					@foreach($event as $data)
 					<div class="row align-items-center">
-						<div class="col-lg-6 pb-30">
+						<div class="col-lg-12 pb-30" >
 							<div class="single-carusel row align-items-center">
 								<div class="col-12 col-md-6 thumb">
-									<img class="img-fluid" src="{{asset('/frontend')}}/img/events1.jpg" alt="">
+									<img class="img-fluid" src="/img/{{$data->foto}}" alt="">
 								</div>
 								<div class="detials col-12 col-md-6">
-									<p>21th April, 2020</p>
-									<a href="{{url('sites/eventsdetail')}}"><h4>Festival Hari Kartini</h4></a>
+									<p>{{$data->tanggal_event}}</p>
+									<a href="{{url('sites/eventdetail')}}"><h4>{{$data->nama_event}}</h4></a>
 									<p>
-										Dalam memperingati hari kartini kampung hijau kemuning menyelenggarakan festival hari kartini.
+										{{$data->keterangan}}
 									</p>
 								</div>
 							</div>
-						</div>
-						<div class="col-lg-6 pb-30">
-							<div class="single-carusel row align-items-center">
-								<div class="col-12 col-md-6 thumb">
-									<img class="img-fluid" src="{{asset('/frontend')}}/img/events2.jpg" alt="">
-								</div>
-								<div class="detials col-12 col-md-6">
-									<p>17th Agustus, 2019</p>
-									<a href="{{url('sites/eventsdetail')}}"><h4>Festival Hari Kemerdekaan</h4></a>
-									<p>
-										Kampung hijau kemuning menyelenggarakan 17 agustusan yang di hadiri oleh semua warga
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 pb-30">
-							<div class="single-carusel row align-items-center">
-								<div class="col-12 col-md-6 thumb">
-									<img class="img-fluid" src="{{asset('/frontend')}}/img/events3.jpg" alt="">
-								</div>
-								<div class="detials col-12 col-md-6">
-									<p>25th February, 2020</p>
-									<a href="{{url('sites/eventsdetail')}}"><h4>Seminar Daur Ulang Sampah</h4></a>
-									<p>
-										Untuk menghindari penumpukan sampah kampung hijau kemuning mengadakan seminar daur ulang sampah yang terbuka untuk umum.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 pb-30">
-							<div class="single-carusel row align-items-center">
-								<div class="col-12 col-md-6 thumb">
-									<img class="img-fluid" src="{{asset('/frontend')}}/img/events4.jpg" alt="">
-								</div>
-								<div class="detials col-12 col-md-6">
-									<p>8th Juli, 2020</p>
-									<a href="{{url('sites/eventsdetail')}}"><h4>Seminar Penanaman Pohon</h4></a>
-									<p>
-										Untuk melestarikan bumi agar tetap hijau kampung hijau kemuning mengadakan seminar penanaman pohon.
-									</p>
-								</div>
-							</div>
-						</div>																		
-								
+						</div>	
 					</div>
-				</div>	
+					@endforeach
+				</div>
+				
 			</section>
 			<!-- End events-list Area -->
 				
