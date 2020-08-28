@@ -19,7 +19,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Site Title -->
     <title>Kampung Hijau Kemuning</title>
-
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
         <!--
         CSS
@@ -304,19 +303,21 @@
                 </div>								
                 <div class="row">
                     <div class="active-upcoming-event-carusel">
+                        @foreach($event as $data) 
                         <div class="single-carusel row align-items-center">
                             <div class="col-12 col-md-6 thumb">
-                                <img class="img-fluid" src="{{asset('/frontend')}}/img/events1.jpg" alt="">
+                                <img class="img-fluid" src="{{ asset('/img/'.$data->foto)}}" alt="">
                             </div>
                             <div class="detials col-12 col-md-6">
-                                <p>21th April, 2020</p>
-                                <a href="#"><h4>Festival Hari Kartini</h4></a>
+                                <p>{{ $data->tanggal_event }}</p>
+                                <a href="#"><h4>{{ $data->nama_event }}</h4></a>
                                 <p>
-                                    Dalam memperingati hari kartini kampung hijau kemuning menyelenggarakan festival hari kartini.
+                                    {{ $data->keterangan }}
                                 </p>
                             </div>
                         </div>
-                        <div class="single-carusel row align-items-center">
+                        @endforeach
+                        {{-- <div class="single-carusel row align-items-center">
                             <div class="col-12 col-md-6 thumb">
                                 <img class="img-fluid" src="{{asset('/frontend')}}/img/events2.jpg" alt="">
                             </div>
@@ -351,7 +352,7 @@
                                     Untuk melestarikan bumi agar tetap hijau kampung hijau kemuning mengadakan seminar penanaman pohon.
                                 </p>
                             </div>
-                        </div>																						
+                        </div> --}}																						
                     </div>
                 </div>
             </div>	
