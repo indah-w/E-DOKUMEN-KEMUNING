@@ -115,149 +115,26 @@
                 </div>						
                 <div class="row">
                     <div class="active-popular-carusel">
+                        @foreach($kegiatan as $data)
                         <div class="single-popular-carusel">
                             <div class="thumb-wrap relative">
                                 <div class="thumb relative">
                                     <div class="overlay overlay-bg"></div>	
-                                    <img class="img-fluid" src="{{asset('/frontend')}}/img/kegiatan1.jpg" alt="">
+                                    <img class="img-fluid" src="{{asset('/img/'.$data->foto)}}" alt="">
                                 </div>									
                             </div>
                             <div class="details">
                                 <a href="#">
                                     <h4>
-                                        Learn Designing
+                                        {{$data->nama_kegiatan}}
                                     </h4>
                                 </a>
                                 <p>
-                                    When television was young, there was a hugely popular show based on the still popular fictional characte										
+                                    {{$data->tanggal_kegiatan}}										
                                 </p>
                             </div>
                         </div>	
-                        <div class="single-popular-carusel">
-                            <div class="thumb-wrap relative">
-                                <div class="thumb relative">
-                                    <div class="overlay overlay-bg"></div>	
-                                    <img class="img-fluid" src="{{asset('/frontend')}}/img/kegiatan2.jpg" alt="">
-                                </div>									
-                            </div>
-                            <div class="details">
-                                <a href="#">
-                                    <h4>
-                                        Learn React js beginners
-                                    </h4>
-                                </a>
-                                <p>
-                                    When television was young, there was a hugely popular show based on the still popular fictional characte										
-                                </p>
-                            </div>
-                        </div>	
-                        <div class="single-popular-carusel">
-                            <div class="thumb-wrap relative">
-                                <div class="thumb relative">
-                                    <div class="overlay overlay-bg"></div>	
-                                    <img class="img-fluid" src="{{asset('/frontend')}}/img/kegiatan3.jpg" alt="">
-                                </div>									
-                            </div>
-                            <div class="details">
-                                <a href="#">
-                                    <h4>
-                                        Learn Photography
-                                    </h4>
-                                </a>
-                                <p>
-                                    When television was young, there was a hugely popular show based on the still popular fictional characte										
-                                </p>
-                            </div>
-                        </div>	
-                        <div class="single-popular-carusel">
-                            <div class="thumb-wrap relative">
-                                <div class="thumb relative">
-                                    <div class="overlay overlay-bg"></div>	
-                                    <img class="img-fluid" src="{{asset('/frontend')}}/img/kegiatan4.jpg" alt="">
-                                </div>									
-                            </div>
-                            <div class="details">
-                                <a href="#">
-                                    <h4>
-                                        Learn Surveying
-                                    </h4>
-                                </a>
-                                <p>
-                                    When television was young, there was a hugely popular show based on the still popular fictional characte										
-                                </p>
-                            </div>
-                        </div>
-                        <div class="single-popular-carusel">
-                            <div class="thumb-wrap relative">
-                                <div class="thumb relative">
-                                    <div class="overlay overlay-bg"></div>	
-                                    <img class="img-fluid" src="{{asset('/frontend')}}/img/kegiatan5.jpg" alt="">
-                                </div>									
-                            </div>
-                            <div class="details">
-                                <a href="#">
-                                    <h4>
-                                        Learn Designing
-                                    </h4>
-                                </a>
-                                <p>
-                                    When television was young, there was a hugely popular show based on the still popular fictional characte										
-                                </p>
-                            </div>
-                        </div>	
-                        <div class="single-popular-carusel">
-                            <div class="thumb-wrap relative">
-                                <div class="thumb relative">
-                                    <div class="overlay overlay-bg"></div>	
-                                    <img class="img-fluid" src="{{asset('/frontend')}}/img/kegiatan6.jpg" alt="">
-                                </div>									
-                            </div>
-                            <div class="details">
-                                <a href="#">
-                                    <h4>
-                                        Learn React js beginners
-                                    </h4>
-                                </a>
-                                <p>
-                                    When television was young, there was a hugely popular show based on the still popular fictional characte										
-                                </p>
-                            </div>
-                        </div>	
-                        <div class="single-popular-carusel">
-                            <div class="thumb-wrap relative">
-                                <div class="thumb relative">
-                                    <div class="overlay overlay-bg"></div>	
-                                    <img class="img-fluid" src="{{asset('/frontend')}}/img/kegiatan7.jpg" alt="">
-                                </div>									
-                            </div>
-                            <div class="details">
-                                <a href="#">
-                                    <h4>
-                                        Learn Photography
-                                    </h4>
-                                </a>
-                                <p>
-                                    When television was young, there was a hugely popular show based on the still popular fictional characte										
-                                </p>
-                            </div>
-                        </div>	
-                        <div class="single-popular-carusel">
-                            <div class="thumb-wrap relative">
-                                <div class="thumb relative">
-                                    <div class="overlay overlay-bg"></div>	
-                                    <img class="img-fluid" src="{{asset('/frontend')}}/img/kegiatan8.jpg" alt="">
-                                </div>									
-                            </div>
-                            <div class="details">
-                                <a href="#">
-                                    <h4>
-                                        Learn Surveying
-                                    </h4>
-                                </a>
-                                <p>
-                                    When television was young, there was a hugely popular show based on the still popular fictional characte										
-                                </p>
-                            </div>
+                        @endforeach
                         </div>							
                     </div>
                 </div>
@@ -316,43 +193,7 @@
                                 </p>
                             </div>
                         </div>
-                        @endforeach
-                        {{-- <div class="single-carusel row align-items-center">
-                            <div class="col-12 col-md-6 thumb">
-                                <img class="img-fluid" src="{{asset('/frontend')}}/img/events2.jpg" alt="">
-                            </div>
-                            <div class="detials col-12 col-md-6">
-                                <p>17th Agustus, 2020</p>
-                                <a href="#"><h4>Festival Hari Kemerdekaan</h4></a>
-                                <p>
-                                    Kampung hijau kemuning menyelenggarakan 17 agustusan yang di hadiri oleh semua warga
-                                </p>
-                            </div>
-                        </div>	
-                        <div class="single-carusel row align-items-center">
-                            <div class="col-12 col-md-6 thumb">
-                                <img class="img-fluid" src="{{asset('/frontend')}}/img/events3.jpg" alt="">
-                            </div>
-                            <div class="detials col-12 col-md-6">
-                                <p>25th February, 2020</p>
-                                <a href="#"><h4>Seminar Daur Ulang Sampah</h4></a>
-                                <p>
-                                    Untuk menghindari penumpukan sampah kampung hijau kemuning mengadakan seminar daur ulang sampah yang terbuka untuk umum.
-                                </p>
-                            </div>
-                        </div>	
-                        <div class="single-carusel row align-items-center">
-                            <div class="col-12 col-md-6 thumb">
-                                <img class="img-fluid" src="{{asset('/frontend')}}/img/events4.jpg" alt="">
-                            </div>
-                            <div class="detials col-12 col-md-6">
-                                <p>8th Juli, 2020</p>
-                                <a href="#"><h4>Seminar Penanaman Pohon</h4></a>
-                                <p>
-                                    Untuk melestarikan bumi agar tetap hijau kampung hijau kemuning mengadakan seminar penanaman pohon.
-                                </p>
-                            </div>
-                        </div> --}}																						
+                        @endforeach																					
                     </div>
                 </div>
             </div>	
