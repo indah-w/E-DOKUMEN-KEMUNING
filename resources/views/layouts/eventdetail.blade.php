@@ -88,7 +88,6 @@
         <section class="event-details-area section-gap">
             <div class="container">
                 <div class="row">
-                @foreach($event as $data)
                     <div class="col-lg-7 event-details-left">
                         <div class="main-img">
                             <img class="img-fluid" src="/img/{{$data->foto}}" alt="">
@@ -126,7 +125,6 @@
                             </ul>
                         </div>														
                     </div>
-                    @endforeach
                     <div class="social-nav row no-gutters">
                         <div class="row-lg-6 row-md-6 ">
                             <ul class="focials">

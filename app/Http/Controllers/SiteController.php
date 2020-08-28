@@ -26,10 +26,10 @@ class SiteController extends Controller
         return view('layouts.event', compact('event'));
     }
 
-    public function eventdetail()
+    public function eventdetail($id)
     {
-        $event = Event::all();
-        return view('layouts.eventdetail', compact('event'));
+        $data = Event::find($id);
+        return view('layouts.eventdetail', compact('data'));
     }
 
     public function kegiatan()
