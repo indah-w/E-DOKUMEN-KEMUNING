@@ -21,7 +21,7 @@
                         <label for="file" class="col-md-3 col-form-label text-md-right">{{ __('Dokumen ') }}</label>
 
                         <div class="col-md-7">
-                            <input id="file" type="file" accept="file/word,file/excel,file/pdf" class="form-control @error('file') is-invalid @enderror" name="file" value="{{ old('file') }}" required autocomplete="file" autofocus>
+                            <input id="file" type="file" accept="file/doc,file/docx,file/xls,file/xlsx, file/ppt, file/pptx" class="form-control @error('file') is-invalid @enderror" name="file" value="{{ old('file') }}" required autocomplete="file" autofocus>
 
                             @error('file')
                                 <span class="invalid-feedback" role="alert">
