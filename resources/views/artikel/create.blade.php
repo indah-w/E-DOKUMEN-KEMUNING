@@ -20,7 +20,7 @@
                         <label for="foto" class="col-md-3 col-form-label text-md-right">{{ __('Foto ') }}</label>
 
                         <div class="col-md-7">
-                            <input id="foto" type="file" accept="foto/x-png,foto/gif,foto/jpeg" class="form-control @error('foto') is-invalid @enderror" name="foto" value="{{ old('foto') }}" required autocomplete="foto" autofocus>
+                            <input id="foto" type="file" accept="foto/x-png,foto/gif,foto/jpeg, foto/jpg" class="form-control @error('foto') is-invalid @enderror" name="foto" value="{{ old('foto') }}" required autocomplete="foto" autofocus>
 
                             @error('foto')
                                 <span class="invalid-feedback" role="alert">
