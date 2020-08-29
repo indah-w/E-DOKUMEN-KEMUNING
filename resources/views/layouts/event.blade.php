@@ -108,9 +108,13 @@
 						</div>	
 					</div>
 					@endforeach
-					<div class="col-lg-6 col-sm-12 footer-social">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
+					<div class="social-nav row no-gutters">
+                        <div class="row-lg-6 row-md-6 ">
+                            <ul class="focials">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            </ul>                          
+                            </div>
                     </div>
 				</div>
 				
@@ -130,8 +134,8 @@
 					</div>
 					<div class="footer-bottom row align-items-center justify-content-between">
 						<p class="footer-text m-0 col-lg-6 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Kampung Hijau Kemuning | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by indahwdyst
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+							Copyright &copy;<script>document.write(new Date().getFullYear());</script> Kampung Hijau Kemuning | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by indahwdyst
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 						<div class="col-lg-6 col-sm-12 footer-social">
 							<a href="#"><i class="fa fa-facebook"></i></a>
 							<a href="#"><i class="fa fa-twitter"></i></a>
