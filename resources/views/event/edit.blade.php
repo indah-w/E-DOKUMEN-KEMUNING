@@ -88,7 +88,7 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="keterangan" class="col-md-3 col-form-label text-md-right">{{ __('Keterangan') }}</label>
+                        <label for="keterangan" class="col-md-3 col-form-label text-md-right">{{ __('Uraian') }}</label>
 
                         <div class="col-md-7">
                             <input id="keterangan" type="text" class="form-control @error('keterangan') is-invalid @enderror" name="keterangan" value="{{ $kegiatan->keterangan }}" required autocomplete="keterangan" autofocus>
@@ -105,7 +105,7 @@
                     <div class="form-group row mb-0">
                         <div class="col-md-6 offset-md-3">
                             <button type="submit" class="btn btn-primary">
-                                {{ __('Update') }}
+                                {{ __('Ubah') }}
                             </button>
                         </div>
                     </div>

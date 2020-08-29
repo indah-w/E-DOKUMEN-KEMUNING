@@ -129,9 +129,6 @@
                                         {{$data->nama_kegiatan}}
                                     </h4>
                                 </a>
-                                <p>
-                                    {{$data->tanggal_kegiatan}}										
-                                </p>
                             </div>
                         </div>	
                         @endforeach
@@ -184,14 +181,12 @@
                         <div class="single-carusel row align-items-center">
                             <div class="col-12 col-md-6 thumb">
                                 <img class="img-fluid" src="{{ asset('/img/'.$data->foto)}}" alt="">
-                            </div>
-                            <div class="detials col-12 col-md-6">
-                                <p>{{ $data->tanggal_event }}</p>
+                                <!-- <p>{{ $data->tanggal_event }}</p> -->
                                 <a href="#"><h4>{{ $data->nama_event }}</h4></a>
-                                <p>
-                                    {{ $data->keterangan }}
-                                </p>
                             </div>
+                            <!-- <div class="detials col-12 col-md-6">
+                                
+                            </div> -->
                         </div>
                         @endforeach																					
                     </div>

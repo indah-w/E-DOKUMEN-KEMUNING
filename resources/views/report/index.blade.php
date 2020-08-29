@@ -1,6 +1,6 @@
 @extends('adminlte.layouts.app')
 
-@section('title', 'List Report Kampung Kemuning')
+@section('title', 'Report Kampung Kemuning')
 
 {{-- Custom CSS --}}
 @push('css')
@@ -14,13 +14,13 @@
 	<div class="col-md-12">
 		<div class="card">
 		    <div class="card-header">
-		        <h3 class="card-title">List Report Kampung Kemuning</h3>
+		        <h3 class="card-title">Report Kampung Kemuning</h3>
 		    </div>
 		    <div class="card-body">
 		    	<!-- @include('partial.alert') -->
-		    	<p>
+		    	<!-- <p>
 		    		<a href="{{ route('report.create') }}" class="btn btn-primary">Tambah Data Report</a>
-		    	</p>
+		    	</p> -->
 		    	<table class="table" id="example1">
 		    		<thead>
 		    			<tr>
@@ -32,7 +32,7 @@
                             <th>Jumlah Tempat Sampah</th>
                             <th>Jumlah Biopori</th>
                             <th>Jumlah Anggota Bank Sampah</th>
-							<th>Action</th>
+							<th>Opsi</th>
 		    			</tr>
 		    		</thead>
 		    		<tbody>

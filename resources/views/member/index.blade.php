@@ -1,6 +1,6 @@
 @extends('adminlte.layouts.app')
 
-@section('title', 'List Member')
+@section('title', 'Daftar Warga')
 
 {{-- Custom CSS --}}
 @push('css')
@@ -15,25 +15,27 @@
 	<div class="col-md-12">
 		<div class="card">
 		    <div class="card-header">
-		        <h3 class="card-title">List Member</h3>
+		        <h3 class="card-title">Daftar Warga</h3>
 		    </div>
 		    <div class="card-body">
 		    	<!-- @include('partial.alert') -->
 		    	<p>
-		    		<a href="{{ route('member.create') }}" class="btn btn-primary">Tambah Data Member</a>
+		    		<a href="{{ route('member.create') }}" class="btn btn-primary">Tambah Data Warga</a>
 		    	</p>
 		    	<table class="table" id="example1">
 		    		<thead>
 		    			<tr>
 		    				<th>Tanggal</th>
-		    				<th>ID Member</th>
-		    				<th>Nama Kartu Keluarga</th>
+		    				<th>ID Warga</th>
+		    				<th>Nama Kepala Keluarga</th>
 		    				<th>Alamat</th>
 							<th>No Telepon</th>
 							<th>Status Rumah</th>
 							<th>Jumlah Anak</th>
 							<th>Memiliki Tempat Sampah</th>
-							<th>Action</th>
+							<th>Jumlah Biopori</th>
+							<th>Anggota Bank Sampah</th>
+							<th>Opsi</th>
 		    			</tr>
 		    		</thead>
 		    		<tbody>
@@ -47,6 +49,8 @@
 							<td>{{ $data->status_rumah }}</td>
 							<td>{{ $data->jumlah_anak }}</td>
 							<td>{{ $data->memiliki_tempat_sampah }}</td>
+							<td>{{ $data->jumlah_biopori }}</td>
+							<td>{{ $data->anggota_bank_sampah }}</td>
 		    				<td>@include('partial.action', ['data' => $data, 'route'=>'member'])</td>
 		    			</tr>
 		    			@endforeach

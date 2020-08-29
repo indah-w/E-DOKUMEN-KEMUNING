@@ -2,7 +2,7 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="#" class="brand-link d-flex align-items-center justify-content-center">
-        <span class="brand-text font-weight-light"><img src="{{ asset('img/logo.png') }}" alt="Logo" style="width: 170px;">
+        <span class="brand-text font-weight-light"><img src="{{ asset('dashboard/img/logo1.png') }}" alt="Logo" style="width: 100px;">
             {{-- {{ config('app.name', 'Laravel') }} --}}
         </span>
     </a>
@@ -41,6 +41,33 @@
 
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
+                            <a href="{{ route('dokumen.index') }}" class="nav-link">
+                                <i class="fa fa-file-alt"></i>
+                                <p> Data Dokumen</p>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('event.index') }}" class="nav-link">
+                                <i class="fa fa-file-alt"></i>
+                                <p> Data Event</p>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('kegiatan.index') }}" class="nav-link">
+                                <i class="fa fa-file-alt"></i>
+                                <p> Data Kegiatan</p>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
                             <a href="{{ route('member.index') }}" class="nav-link">
                                 <i class="fa fa-file-alt"></i>
                                 <p> Data Member</p>
@@ -57,32 +84,6 @@
                         </li>
                     </ul>
 
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="{{ route('kegiatan.index') }}" class="nav-link">
-                                <i class="fa fa-file-alt"></i>
-                                <p> Data Kegiatan</p>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="{{ route('event.index') }}" class="nav-link">
-                                <i class="fa fa-file-alt"></i>
-                                <p> Data Event</p>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="{{ route('dokumen.index') }}" class="nav-link">
-                                <i class="fa fa-file-alt"></i>
-                                <p> Data Dokumen</p>
-                            </a>
-                        </li>
-                    </ul>
                 </li>
             </ul>
         </nav>

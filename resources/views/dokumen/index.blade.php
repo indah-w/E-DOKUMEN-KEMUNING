@@ -1,6 +1,6 @@
 @extends('adminlte.layouts.app')
 
-@section('title', 'List Dokumen')
+@section('title', 'Daftar Dokumen')
 
 {{-- Custom CSS --}}
 @push('css')
@@ -16,12 +16,12 @@
 	<div class="col-md-12">
 		<div class="card">
 		    <div class="card-header">
-		        <h3 class="card-title">List Dokumen</h3>
+		        <h3 class="card-title">Daftar Dokumen</h3>
 		    </div>
 		    <div class="card-body">
 		    	@include('partial.alert')
 		    	<p>
-		    		<a href="{{ route('dokumen.create') }}" class="btn btn-primary">Tambah Data</a>
+		    		<a href="{{ route('dokumen.create') }}" class="btn btn-primary">Tambah Data Dokumen</a>
 		    	</p>
 		    	<table class="table" id="example1">
 		    		<thead>
@@ -32,7 +32,7 @@
 		    				<th>Nama Dokumen</th>
 		    				<th>Type File</th>
 		    				<th>Keterangan</th>
-		    				<th>Action</th>
+		    				<th>Opsi</th>
 		    			</tr>
 		    		</thead>
 		    		<tbody>

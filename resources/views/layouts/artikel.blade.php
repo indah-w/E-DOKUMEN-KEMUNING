@@ -91,12 +91,13 @@
                     <div class="col-lg-12 pb-30">
                         @foreach($artikel as $data)
                         <div class="single-carusel row ">
-                            <div class="col-12 col-md-6 thumb">
+                            <div class="col-12 col-md-6">
                                 <a href="{{url('sites/artikeldetail')}}"><h4>{{$data->nama_artikel}}</h4></a>
-                                <img class="img-fluid" src="/img/{{$data->foto}}" alt="">
-                                <p style="margin-top: 20">
-                                    
-                                </p>
+                                <img class="img-fluid" src="/img/{{$data->foto}}" alt=""> 
+                                <br/>
+                                <h5 style="margin-top: 20px">Penulis : {{$data->pembuat}}</h5>
+                                <p>{{$data->tanggal_artikel}}</p>
+                                <p>{{$data->keterangan}}</p>
                             </div>
                             <div class="detials col-12 col-md-6">
                                 

@@ -97,10 +97,35 @@
                         </div>
                     </div>
 
+                    <div class="form-group row">
+                        <label for="jumlah_biopori" class="col-md-3 col-form-label text-md-right">{{ __('Jumlah Biopori') }}</label>
+
+                        <div class="col-md-7">
+                            <input id="jumlah_biopori" type="text" class="form-control @error('jumlah_biopori') is-invalid @enderror" name="jumlah_biopori" value="{{ old('jumlah_biopori') }}" required autocomplete="jumlah_biopori" autofocus>
+
+                            @error('jumlah_biopori')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="anggota_bank_sampah" class="col-md-3 col-form-label text-md-right">{{ __('Anggota Bank Sampah') }}</label>
+
+                        <div class="col-md-7">
+                            <input type="radio" id="anggota_bank_sampah" name="anggota_bank_sampah" value="Ya">
+                            <label for="Ya">Ya</label><br>
+                            <input type="radio" id="anggota_bank_sampah" name="anggota_bank_sampah" value="Tidak">
+                            <label for="Tidak">Tidak</label><br>
+                        </div>
+                    </div>
+
                     <div class="form-group row mb-0">
                         <div class="col-md-6 offset-md-4 ">
                             <button type="submit" class="btn btn-primary float-right">
-                                {{ __('Save') }}
+                                {{ __('Simpan') }}
                             </button>
                         </div>
                     </div>

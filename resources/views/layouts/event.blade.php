@@ -90,24 +90,21 @@
 			
 				<div class="container">
 					<p>Event Seru di Kampung Kemuning</p>
-					@foreach($event as $data)
+					
 					<div class="row align-items-center">
-						<div class="col-lg-12 pb-30" >
+					@foreach($event as $data)
+						<div class="col-lg-4 pb-30" >
 							<div class="single-carusel row align-items-center">
-								<div class="col-12 col-md-6 thumb">
+								<div class="col-4 col-md-6 thumb">
 									<img class="img-fluid" src="/img/{{$data->foto}}" alt="">
-								</div>
-								<div class="detials col-12 col-md-6">
 									<p>{{$data->tanggal_event}}</p>
 									<a href="{{route('event_detail', $data->id)}}"><h4>{{$data->nama_event}}</h4></a>
-									<!-- <p>
-										{{$data->keterangan}}
-									</p> -->
 								</div>
 							</div>
-						</div>	
+						</div>
+						@endforeach	
 					</div>
-					@endforeach
+					
 					<div class="social-nav row no-gutters">
                         <div class="row-lg-6 row-md-6 ">
                             <ul class="focials">

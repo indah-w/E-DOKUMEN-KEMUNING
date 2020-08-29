@@ -18,7 +18,7 @@
                     {{ method_field('PATCH') }}
 		    		@csrf
                     <div class="form-group row">
-                        <label for="foto" class="col-md-3 col-form-label text-md-right">{{ __('Foto/Video') }}</label>
+                        <label for="foto" class="col-md-3 col-form-label text-md-right">{{ __('Foto') }}</label>
 
                         <div class="col-md-7">
                             <input id="foto" type="file" accept="image/x-png,image/gif,image/jpeg" class="form-control @error('foto') is-invalid @enderror" name="foto" value="{{ old('foto') }}" autocomplete="foto" autofocus>
@@ -63,7 +63,7 @@
                     <div class="form-group row mb-0">
                         <div class="col-md-6 offset-md-3">
                             <button type="submit" class="btn btn-primary">
-                                {{ __('Update') }}
+                                {{ __('Ubah') }}
                             </button>
                         </div>
                     </div>

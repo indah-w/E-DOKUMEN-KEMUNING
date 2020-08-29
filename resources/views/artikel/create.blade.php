@@ -1,6 +1,6 @@
 @extends('adminlte.layouts.app')
 
-@section('title', 'Create Artikel')
+@section('title', 'Buat Artikel')
 
 {{-- Custom CSS --}}
 @push('css')
@@ -11,7 +11,7 @@
 	<div class="col-md-6">
 		<div class="card">
 		    <div class="card-header">
-		        <h3 class="card-title">Create Artikel</h3>
+		        <h3 class="card-title">Buat Artikel</h3>
 		    </div>
 		    <div class="card-body">
 		    	<form action="{{ route('artikel.store') }}" method="POST" enctype="multipart/form-data">
@@ -73,10 +73,10 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="keterangan" class="col-md-3 col-form-label text-md-right">{{ __('Keterangan') }}</label>
+                        <label for="keterangan" class="col-md-3 col-form-label text-md-right">{{ __('Uraian') }}</label>
 
                         <div class="col-md-7">
-                            <input id="keterangan" type="text" class="form-control @error('keterangan') is-invalid @enderror" name="keterangan" value="{{ old('keterangan') }}" required autocomplete="keterangan" autofocus>
+                            <textarea id="keterangan" type="text" class="form-control @error('keterangan') is-invalid @enderror" name="keterangan" value="{{ old('keterangan') }}" required autocomplete="keterangan" autofocus></textarea>
 
                             @error('keterangan')
                                 <span class="invalid-feedback" role="alert">
@@ -89,7 +89,7 @@
                     <div class="form-group row mb-0">
                         <div class="col-md-6 offset-md-3">
                             <button type="submit" class="btn btn-primary">
-                                {{ __('Save') }}
+                                {{ __('Simpan') }}
                             </button>
                         </div>
                     </div>

@@ -1,6 +1,6 @@
 @extends('adminlte.layouts.app')
 
-@section('title', 'Create Dokumen')
+@section('title', 'Buat Dokumen')
 
 {{-- Custom CSS --}}
 @push('css')
@@ -11,7 +11,7 @@
 	<div class="col-md-12">
 		<div class="card">
 		    <div class="card-header">
-		        <h3 class="card-title">Create Dokumen</h3>
+		        <h3 class="card-title">Buat Dokumen</h3>
 		    </div>
 		    <div class="card-body">
 		    	<form action="{{ route('dokumen.store') }}" method="POST" enctype="multipart/form-data">
@@ -79,7 +79,7 @@
                     <div class="form-group row mb-0">
                         <div class="col-md-6 offset-md-4 ">
                             <button type="submit" class="btn btn-primary float-right">
-                                {{ __('Save') }}
+                                {{ __('Simpan') }}
                             </button>
                         </div>
                     </div>

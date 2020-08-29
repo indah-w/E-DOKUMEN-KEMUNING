@@ -1,6 +1,6 @@
 @extends('adminlte.layouts.app')
 
-@section('title', 'List Event')
+@section('title', 'Daftar Event')
 
 {{-- Custom CSS --}}
 @push('css')
@@ -14,7 +14,7 @@
 	<div class="col-md-12">
 		<div class="card">
 		    <div class="card-header">
-		        <h3 class="card-title">List Event</h3>
+		        <h3 class="card-title">Daftar Event</h3>
 		    </div>
 		    <div class="card-body">
 		    	<!-- @include('partial.alert') -->
@@ -31,8 +31,8 @@
                             <th>Tanggal Event</th>
                             <th>Harga Event</th>
                             <th>Lokasi</th>
-                            <th>Keterangan</th>
-							<th>Action</th>
+                            <th>Uraian</th>
+							<th>Opsi</th>
 		    			</tr>
 		    		</thead>
 		    		<tbody>

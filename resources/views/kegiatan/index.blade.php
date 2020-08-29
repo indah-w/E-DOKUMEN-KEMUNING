@@ -1,6 +1,6 @@
 @extends('adminlte.layouts.app')
 
-@section('title', 'List Kegiatan')
+@section('title', 'Daftar Kegiatan')
 
 {{-- Custom CSS --}}
 @push('css')
@@ -16,22 +16,22 @@
 	<div class="col-md-12">
 		<div class="card">
 		    <div class="card-header">
-		        <h3 class="card-title">List Kegiatan</h3>
+		        <h3 class="card-title">Daftar Kegiatan</h3>
 		    </div>
 		    <div class="card-body">
 		    	@include('partial.alert')
 		    	<p>
-		    		<a href="{{ route('kegiatan.create') }}" class="btn btn-primary">Tambah Data</a>
+		    		<a href="{{ route('kegiatan.create') }}" class="btn btn-primary">Tambah Data Kegiatan</a>
 		    	</p>
 		    	<table class="table" id="example1">
 		    		<thead>
 		    			<tr>
 		    				<th>Tanggal</th>
 		    				<th>ID Kegiatan</th>
-		    				<th>Foto/Video</th>
+		    				<th>Foto</th>
 		    				<th>Nama Kegiatan</th>
 		    				<th>Tanggal Kegiatan</th>
-		    				<th>Action</th>
+		    				<th>Opsi</th>
 		    			</tr>
 		    		</thead>
 		    		<tbody>

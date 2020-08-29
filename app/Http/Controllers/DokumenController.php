@@ -45,8 +45,8 @@ class DokumenController extends Controller
         return redirect()->route('dokumen.index')->with('status', 'Dokumen updated!!!')->with('success', true);
     }
 
-    public function destroy(Dokumen $dokumen) {
-        // $dokumen = Dokumen::find($id);
+    public function destroy($id) {
+        $dokumen = Dokumen::find($id);
         $dokumen->delete();
         return redirect()->route('dokumen.index')->with('status', 'Dokumen deleted!!!')->with('success', true);
     }

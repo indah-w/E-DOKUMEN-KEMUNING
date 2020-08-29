@@ -8,7 +8,7 @@
 
 @section('content')
 <div class="row container-fluid d-flex justify-content-center">
-	<div class="col-md-6">
+	<div class="col-md-10">
 		<div class="card">
 		    <div class="card-header">
 		        <h3 class="card-title">Edit Artikel</h3>
@@ -60,12 +60,12 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="keterangan" class="col-md-3 col-form-label text-md-right">{{ __('Tanggal Artikel') }}</label>
+                        <label for="tanggal_artikel" class="col-md-3 col-form-label text-md-right">{{ __('Tanggal Artikel') }}</label>
 
                         <div class="col-md-7">
-                            <input id="keterangan" type="text" class="form-control @error('keterangan') is-invalid @enderror" name="keterangan" value="{{ $artikel->keterangan }}" required autocomplete="keterangan" autofocus>
+                            <input id="tanggal_artikel" type="text" class="form-control @error('tanggal_artikel') is-invalid @enderror" name="tanggal_artikel" value="{{ $artikel->tanggal_artikel }}" required autocomplete="tanggal_artikel" autofocus>
 
-                            @error('keterangan')
+                            @error('tanggal_artikel')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -74,10 +74,10 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="keterangan" class="col-md-3 col-form-label text-md-right">{{ __('Keterangan') }}</label>
+                        <label for="keterangan" class="col-md-3 col-form-label text-md-right">{{ __('Uraian') }}</label>
 
                         <div class="col-md-7">
-                            <input id="keterangan" type="text" class="form-control @error('keterangan') is-invalid @enderror" name="keterangan" value="{{ $artikel->keterangan }}" required autocomplete="keterangan" autofocus>
+                            <textarea id="keterangan" type="text" class="form-control @error('keterangan') is-invalid @enderror" name="keterangan" value="{{ $artikel->keterangan }}" required autocomplete="keterangan" autofocus></textarea>
 
                             @error('keterangan')
                                 <span class="invalid-feedback" role="alert">

@@ -21,6 +21,8 @@ class CreateMemberTable extends Migration
             $table->string('status_rumah', 30);
             $table->string('jumlah_anak', 30);
             $table->string('memiliki_tempat_sampah', 5);
+            $table->string('jumlah_biopori', 10);
+            $table->string('anggota_bank_sampah', 5);
             $table->timestamps();
         });
     }

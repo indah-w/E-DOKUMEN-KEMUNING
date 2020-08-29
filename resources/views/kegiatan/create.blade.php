@@ -1,6 +1,6 @@
 @extends('adminlte.layouts.app')
 
-@section('title', 'Create Kegiatan')
+@section('title', 'Buat Kegiatan')
 
 {{-- Custom CSS --}}
 @push('css')
@@ -11,13 +11,13 @@
 	<div class="col-md-6">
 		<div class="card">
 		    <div class="card-header">
-		        <h3 class="card-title">Create Kegiatan</h3>
+		        <h3 class="card-title">Buat Kegiatan</h3>
 		    </div>
 		    <div class="card-body">
 		    	<form action="{{ route('kegiatan.store') }}" method="POST" enctype="multipart/form-data">
 		    		@csrf
                     <div class="form-group row">
-                        <label for="foto" class="col-md-3 col-form-label text-md-right">{{ __('Foto/Video ') }}</label>
+                        <label for="foto" class="col-md-3 col-form-label text-md-right">{{ __('Foto ') }}</label>
 
                         <div class="col-md-7">
                             <input id="foto" type="file" accept="foto/x-png,foto/gif,foto/jpeg, foto/jpg" class="form-control @error('foto') is-invalid @enderror" name="foto" value="{{ old('foto') }}" required autocomplete="foto" autofocus>
@@ -61,7 +61,7 @@
                     <div class="form-group row mb-0">
                         <div class="col-md-6 offset-md-3">
                             <button type="submit" class="btn btn-primary">
-                                {{ __('Save') }}
+                                {{ __('Simpan') }}
                             </button>
                         </div>
                     </div>

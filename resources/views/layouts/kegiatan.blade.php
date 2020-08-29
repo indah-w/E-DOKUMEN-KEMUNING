@@ -93,9 +93,8 @@
                         <a href="/img/{{$data->foto}}" class="img-gal">
                             <div class="single-imgs relative">		
                                 <div class="overlay overlay-bg"></div>
-                                <div class="relative">				
+                                <div class="relative text-center">				
                                     <img class="img-fluid" src="/img/{{$data->foto}}" alt="">
-                                    <p>{{$data->tanggal_kegiatan}}</p>
                                     <p>{{$data->nama_kegiatan}}</p>		
                                 </div>
                             </div>
