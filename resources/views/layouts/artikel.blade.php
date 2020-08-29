@@ -95,7 +95,7 @@
                                 <a href="{{url('sites/artikeldetail')}}"><h4>{{$data->nama_artikel}}</h4></a>
                                 <img class="img-fluid" src="/img/{{$data->foto}}" alt="">
                                 <p style="margin-top: 20">
-                                    Lingkungan hidup perlu kita lestarikan untuk menjaga keseimbangan alam dan kelangsungan hidup manusia. Salah satunya dengan membiasakan diri untuk memelihara kebersihan di lingkungan sekitar kita.
+                                    
                                 </p>
                             </div>
                             <div class="detials col-12 col-md-6">

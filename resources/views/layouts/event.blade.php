@@ -100,9 +100,9 @@
 								<div class="detials col-12 col-md-6">
 									<p>{{$data->tanggal_event}}</p>
 									<a href="{{route('event_detail', $data->id)}}"><h4>{{$data->nama_event}}</h4></a>
-									<p>
+									<!-- <p>
 										{{$data->keterangan}}
-									</p>
+									</p> -->
 								</div>
 							</div>
 						</div>	
