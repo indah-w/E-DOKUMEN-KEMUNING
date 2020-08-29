@@ -8,7 +8,7 @@
 
 @section('content')
 <div class="row container-fluid d-flex justify-content-center">
-	<div class="col-md-6">
+	<div class="col-md-12">
 		<div class="card">
 		    <div class="card-header">
 		        <h3 class="card-title">Buat Kegiatan</h3>

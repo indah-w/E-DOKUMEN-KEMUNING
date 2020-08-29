@@ -35,6 +35,7 @@
 							<th>Memiliki Tempat Sampah</th>
 							<th>Jumlah Biopori</th>
 							<th>Anggota Bank Sampah</th>
+							<th>Tanggal Pembaharuan</th>
 							<th>Opsi</th>
 		    			</tr>
 		    		</thead>
@@ -51,6 +52,7 @@
 							<td>{{ $data->memiliki_tempat_sampah }}</td>
 							<td>{{ $data->jumlah_biopori }}</td>
 							<td>{{ $data->anggota_bank_sampah }}</td>
+							<td>{{ $data->updated_at->toDateString() }}</td>
 		    				<td>@include('partial.action', ['data' => $data, 'route'=>'member'])</td>
 		    			</tr>
 		    			@endforeach

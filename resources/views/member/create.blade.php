@@ -1,6 +1,6 @@
 @extends('adminlte.layouts.app')
 
-@section('title', 'Create Member')
+@section('title', 'Buat Data Warga')
 
 {{-- Custom CSS --}}
 @push('css')
@@ -11,7 +11,7 @@
 	<div class="col-md-12">
 		<div class="card">
 		    <div class="card-header">
-		        <h3 class="card-title">Create Member</h3>
+		        <h3 class="card-title">Buat Data Warga</h3>
 		    </div>
 		    <div class="card-body">
 		    	<form action="{{ route('member.store') }}" method="POST">

@@ -8,7 +8,7 @@
 
 @section('content')
 <div class="row container-fluid d-flex justify-content-center">
-	<div class="col-md-6">
+	<div class="col-md-12">
 		<div class="card">
 		    <div class="card-header">
 		        <h3 class="card-title">Edit Event</h3>
@@ -35,7 +35,7 @@
                         <label for="nama_event" class="col-md-3 col-form-label text-md-right">{{ __('Nama Event') }}</label>
 
                         <div class="col-md-7">
-                            <input id="nama_event" type="text" class="form-control @error('nama_event') is-invalid @enderror" name="nama_event" value="{{ $kegiatan->nama_event }}" required autocomplete="nama_event" autofocus>
+                            <input id="nama_event" type="text" class="form-control @error('nama_event') is-invalid @enderror" name="nama_event" value="{{ $event->nama_event }}" required autocomplete="nama_event" autofocus>
 
                             @error('nama_event')
                                 <span class="invalid-feedback" role="alert">
@@ -49,7 +49,7 @@
                         <label for="tanggal_event" class="col-md-3 col-form-label text-md-right">{{ __('Tanggal Event') }}</label>
 
                         <div class="col-md-7">
-                            <input id="tanggal_event" type="text" class="form-control @error('tanggal_event') is-invalid @enderror" name="tanggal_event" value="{{ $kegiatan->tanggal_event }}" required autocomplete="tanggal_event" autofocus>
+                            <input id="tanggal_event" type="text" class="form-control @error('tanggal_event') is-invalid @enderror" name="tanggal_event" value="{{ $event->tanggal_event }}" required autocomplete="tanggal_event" autofocus>
 
                             @error('tanggal_event')
                                 <span class="invalid-feedback" role="alert">
@@ -63,7 +63,7 @@
                         <label for="harga_event" class="col-md-3 col-form-label text-md-right">{{ __('Harga Event') }}</label>
 
                         <div class="col-md-7">
-                            <input id="harga_event" type="text" class="form-control @error('harga_event') is-invalid @enderror" name="harga_event" value="{{ $kegiatan->harga_event }}" required autocomplete="harga_event" autofocus>
+                            <input id="harga_event" type="text" class="form-control @error('harga_event') is-invalid @enderror" name="harga_event" value="{{ $event->harga_event }}" required autocomplete="harga_event" autofocus>
 
                             @error('harga_event')
                                 <span class="invalid-feedback" role="alert">
@@ -77,7 +77,7 @@
                         <label for="lokasi" class="col-md-3 col-form-label text-md-right">{{ __('Lokasi') }}</label>
 
                         <div class="col-md-7">
-                            <input id="lokasi" type="text" class="form-control @error('lokasi') is-invalid @enderror" name="lokasi" value="{{ $kegiatan->lokasi }}" required autocomplete="lokasi" autofocus>
+                            <input id="lokasi" type="text" class="form-control @error('lokasi') is-invalid @enderror" name="lokasi" value="{{ $event->lokasi }}" required autocomplete="lokasi" autofocus>
 
                             @error('lokasi')
                                 <span class="invalid-feedback" role="alert">
@@ -91,7 +91,7 @@
                         <label for="keterangan" class="col-md-3 col-form-label text-md-right">{{ __('Uraian') }}</label>
 
                         <div class="col-md-7">
-                            <input id="keterangan" type="text" class="form-control @error('keterangan') is-invalid @enderror" name="keterangan" value="{{ $kegiatan->keterangan }}" required autocomplete="keterangan" autofocus>
+                            <textarea id="keterangan" type="text" class="form-control @error('keterangan') is-invalid @enderror" name="keterangan" value="{{ $event->keterangan }}" required autocomplete="keterangan" autofocus></textarea>
 
                             @error('keterangan')
                                 <span class="invalid-feedback" role="alert">
