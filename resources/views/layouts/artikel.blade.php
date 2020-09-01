@@ -89,8 +89,8 @@
             <div class="container">
                 <div class="row ">
                     <div class="col-lg-12 pb-30">
-                        @foreach($artikel as $data)
                         <div class="single-carusel row ">
+                            @foreach($artikel as $data)
                             <div class="col-12 col-md-6">
                                 <a href="{{url('sites/artikeldetail')}}"><h4>{{$data->nama_artikel}}</h4></a>
                                 <img class="img-fluid" src="/img/{{$data->foto}}" alt=""> 
@@ -99,12 +99,9 @@
                                 <p>{{$data->tanggal_artikel}}</p>
                                 <p>{{$data->keterangan}}</p>
                             </div>
-                            <div class="detials col-12 col-md-6">
-                                
-                                
-                            </div>
+                            @endforeach
                         </div>
-                        @endforeach
+                        
                         <div class="social-nav row no-gutters">
                         <div class="row-lg-6 row-md-6 ">
                             <ul class="focials">

@@ -96,9 +96,6 @@
                             <a href="#">
                                 <h4>{{$data->nama_event}}</h4>
                             </a>
-                            <p>
-                                {{$data->keterangan}}
-                            </p>
                         </div>
                     </div>
                     <div class="col-lg-5 event-details-right">
