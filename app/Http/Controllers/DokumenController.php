@@ -35,7 +35,8 @@ class DokumenController extends Controller
         return redirect()->route('dokumen.index')->with('status', 'Dokumen Stored!!!')->with('success', true);
     }
 
-    public function edit(Dokumen $dokumen) {
+    public function edit(Dokumen $dokumen, $id) {
+        $dokumen = Dokumen::find($id);
         return view('dokumen.edit', compact('dokumen', 'status'));
     }
 
