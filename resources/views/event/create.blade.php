@@ -49,7 +49,7 @@
                         <label for="tanggal_event" class="col-md-3 col-form-label text-md-right">{{ __('Tanggal Event') }}</label>
 
                         <div class="col-md-7">
-                            <input id="tanggal_event" type="text" class="form-control @error('tanggal_event') is-invalid @enderror" name="tanggal_event" value="{{ old('tanggal_event') }}" required autocomplete="tanggal_event" autofocus>
+                            <input id="tanggal_event" type="date" class="form-control @error('tanggal_event') is-invalid @enderror" name="tanggal_event" value="{{ old('tanggal_event') }}" required autocomplete="tanggal_event" autofocus>
 
                             @error('tanggal_event')
                                 <span class="invalid-feedback" role="alert">

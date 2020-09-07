@@ -31,7 +31,6 @@
                             <th>Jumlah Tempat Sampah</th>
                             <th>Jumlah Biopori</th>
                             <th>Jumlah Anggota Bank Sampah</th>
-							<th>Opsi</th>
 		    			</tr>
 		    		</thead>
 		    		<tbody>

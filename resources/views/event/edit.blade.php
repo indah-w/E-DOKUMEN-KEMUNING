@@ -49,7 +49,7 @@
                         <label for="tanggal_event" class="col-md-3 col-form-label text-md-right">{{ __('Tanggal Event') }}</label>
 
                         <div class="col-md-7">
-                            <input id="tanggal_event" type="text" class="form-control @error('tanggal_event') is-invalid @enderror" name="tanggal_event" value="{{ $event->tanggal_event }}" required autocomplete="tanggal_event" autofocus>
+                            <input id="tanggal_event" type="date" class="form-control @error('tanggal_event') is-invalid @enderror" name="tanggal_event" value="{{ $event->tanggal_event }}" required autocomplete="tanggal_event" autofocus>
 
                             @error('tanggal_event')
                                 <span class="invalid-feedback" role="alert">
@@ -91,7 +91,7 @@
                         <label for="keterangan" class="col-md-3 col-form-label text-md-right">{{ __('Uraian') }}</label>
 
                         <div class="col-md-7">
-                            <textarea id="keterangan" type="text" class="form-control @error('keterangan') is-invalid @enderror" name="keterangan" value="{{ $event->keterangan }}" required autocomplete="keterangan" autofocus></textarea>
+                            <textarea id="keterangan" type="text" class="form-control @error('keterangan') is-invalid @enderror" name="keterangan" required autocomplete="keterangan" autofocus>{{ $event->keterangan }}</textarea>
 
                             @error('keterangan')
                                 <span class="invalid-feedback" role="alert">

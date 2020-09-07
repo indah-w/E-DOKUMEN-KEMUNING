@@ -48,7 +48,7 @@
                         <label for="tanggal_kegiatan" class="col-md-3 col-form-label text-md-right">{{ __('Tanggal Kegiatan') }}</label>
 
                         <div class="col-md-7">
-                            <input id="tanggal_kegiatan" type="text" class="form-control @error('tanggal_kegiatan') is-invalid @enderror" name="tanggal_kegiatan" value="{{ old('tanggal_kegiatan') }}" required autocomplete="tanggal_kegiatan" autofocus>
+                            <input id="tanggal_kegiatan" type="date" class="form-control @error('tanggal_kegiatan') is-invalid @enderror" name="tanggal_kegiatan" value="{{ old('tanggal_kegiatan') }}" required autocomplete="tanggal_kegiatan" autofocus>
 
                             @error('tanggal_kegiatan')
                                 <span class="invalid-feedback" role="alert">

@@ -62,7 +62,7 @@
                         <label for="tanggal_artikel" class="col-md-3 col-form-label text-md-right">{{ __('Tanggal Artikel') }}</label>
 
                         <div class="col-md-7">
-                            <input id="tanggal_artikel" type="text" class="form-control @error('tanggal_artikel') is-invalid @enderror" name="tanggal_artikel" value="{{ old('tanggal_artikel') }}" required autocomplete="tanggal_artikel" autofocus>
+                            <input id="tanggal_artikel" type="date" class="form-control @error('tanggal_artikel') is-invalid @enderror" name="tanggal_artikel" value="{{ old('tanggal_artikel') }}" required autocomplete="tanggal_artikel" autofocus>
 
                             @error('tanggal_artikel')
                                 <span class="invalid-feedback" role="alert">
