@@ -25,7 +25,6 @@
 		    		<thead>
 		    			<tr>
 		    				<th>Tanggal</th>
-		    				<th>ID Report</th>
 		    				<th>Jumlah Rumah Tetap</th>
 		    				<th>Jumlah Rumah Kontrak</th>
 		    				<th>Jumlah Anak-anak</th>
@@ -36,19 +35,16 @@
 		    			</tr>
 		    		</thead>
 		    		<tbody>
-		    			@foreach($report as $data)
 		    			<tr>
-		    				<td>{{ $data->created_at->toDateString() }}</td>
-		    				<td>{{ $data->id }}</td>
-		    				<td>{{ $data->jumlah_rumah_tetap }}</td>
-		    				<td>{{ $data->jumlah_rumah_kontrak }}</td>
-		    				<td>{{ $data->jumlah_anak }}</td>
-                            <td>{{ $data->jumlah_tempat_sampah }}</td>
-                            <td>{{ $data->jumlah_biopori }}</td>
-                            <td>{{ $data->jumlah_anggota_bs }}</td>
-		    				<td>@include('partial.action', ['data' => $data, 'route'=>'report'])</td>
+		    				<td>{{ \Carbon\Carbon::now() }}</td>
+		    				<td>{{ $jumlahRumahTetap }}</td>
+		    				<td>{{ $jumlahRumahTidakTetap }}</td>
+		    				<td>{{ $jumlahAnak }}</td>
+		    				<td>{{ $jumlahMemilikiTempatSampah }}</td>
+		    				<td>{{ $jumlahBiopori }}</td>
+		    				<td>{{ $jumlahAnggotaBankSampah }}</td>
+		    				<td></td>
 		    			</tr>
-		    			@endforeach
 		    		</tbody>
 		    	</table>
 		    </div>

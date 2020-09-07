@@ -4,12 +4,19 @@ namespace App\Http\Controllers;
 
 use App\Report;
 use Illuminate\Http\Request;
-
+use App\Member;
 class ReportController extends Controller
 {
     public function index() {
         $report = Report::all();
-        return view('report.index', compact('report'));
+        $jumlahRumahTetap = Member::where('status_rumah', 'tetap')->count();
+        $jumlahRumahTidakTetap = Member::where('status_rumah', 'tidak tetap')->count();
+        $jumlahAnak = Member::all()->sum('jumlah_anak');
+        $jumlahMemilikiTempatSampah = Member::where('memiliki_tempat_sampah', 'ya')->count();
+        $jumlahBiopori = Member::all()->sum('jumlah_biopori');
+        $jumlahAnggotaBankSampah = Member::where('anggota_bank_sampah', 'ya')->count();
+        $jumlahKepalaKeluarga = Member::all()->groupBy('nama_kartu_keluarga')->count();
+        return view('report.index', compact('report', 'jumlahRumahTetap', 'jumlahRumahTidakTetap', 'jumlahAnak', 'jumlahMemilikiTempatSampah', 'jumlahBiopori', 'jumlahAnggotaBankSampah', 'jumlahKepalaKeluarga'));
     }
 
     public function create() {

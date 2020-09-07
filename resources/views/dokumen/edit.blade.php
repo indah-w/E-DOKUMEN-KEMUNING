@@ -21,7 +21,7 @@
                         <label for="file" class="col-md-3 col-form-label text-md-right">{{ __('File') }}</label>
 
                         <div class="col-md-7">
-                            <input id="file" type="file" accept="image/x-png,image/gif,image/jpeg" class="form-control @error('file') is-invalid @enderror" name="file" value="{{ old('file') }}" autocomplete="file" autofocus>
+                            <input id="file" type="file" class="form-control @error('file') is-invalid @enderror" name="file" value="{{ old('file') }}" autocomplete="file" autofocus>
 
                             @error('file')
                                 <span class="invalid-feedback" role="alert">
