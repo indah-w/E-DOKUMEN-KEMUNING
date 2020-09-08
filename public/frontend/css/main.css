@@ -2070,7 +2070,7 @@ h6 {
 .main-menu {
     padding-bottom: 20px;
     padding-top: 20px;
-    border-bottom: 1px solid #39353e
+    /* border-bottom: 1px solid #39353e */
 }
 
 #header {
@@ -3168,7 +3168,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     top: 50%;
     right: 10px;
     font-family: 'FontAwesome';
-    speak: none;
+    /* speak: none; */
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -3241,7 +3241,7 @@ dl.accordion.time-line:before {
     top: 50%;
     left: 0;
     font-family: 'icomoon';
-    speak: none;
+    /* speak: none; */
     font-style: normal;
     font-weight: bold;
     font-variant: normal;
@@ -3309,7 +3309,7 @@ dl.accordion.time-line:before {
     top: 50%;
     right: 10px;
     font-family: 'FontAwesome';
-    speak: none;
+    /* speak: none; */
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -3371,7 +3371,7 @@ dl.toggle.time-line:before {
     top: 50%;
     left: 0;
     font-family: 'icomoon';
-    speak: none;
+    /* speak: none; */
     font-style: normal;
     font-weight: bold;
     font-variant: normal;

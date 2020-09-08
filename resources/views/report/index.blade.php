@@ -7,6 +7,7 @@
 <!-- DataTables -->
 <link rel="stylesheet" href="{{ asset('assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css') }}">
 @endpush
 
 @section('content')
@@ -17,7 +18,7 @@
 		        <h3 class="card-title">Report Kampung Kemuning</h3>
 		    </div>
 		    <div class="card-body">
-		    	<!-- @include('partial.alert') -->
+		    	@include('partial.alert')
 		    	<!-- <p>
 		    		<a href="{{ route('report.create') }}" class="btn btn-primary">Tambah Data Report</a>
 		    	</p> -->
@@ -60,9 +61,21 @@
 <script src="{{ asset('assets/plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
 <script src="{{ asset('assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
 
+<script src="{{ asset('assets/plugins/datatables-buttons/js/dataTables.buttons.min.js') }}"></script>
+<script src="{{ asset('assets/plugins/datatables-buttons/js/buttons.flash.min.js') }}"></script>
+<script src="{{ asset('assets/plugins/jszip/jszip.min.js') }}"></script>
+<script src="{{ asset('assets/plugins/pdfmake/pdfmake.min.js') }}"></script>
+<script src="{{ asset('assets/plugins/pdfmake/vfs_fonts.js') }}"></script>
+<script src="{{ asset('assets/plugins/datatables-buttons/js/buttons.html5.min.js') }}"></script>
+<script src="{{ asset('assets/plugins/datatables-buttons/js/buttons.print.min.js') }}"></script>
+
 <script>
     $(function () {
       $("#example1").DataTable({
+      	dom: 'Bfrtip',
+        buttons: [
+        'excel', 'print'
+        ],
         "columnDefs": [
             { "width": "10%", "targets": -1 }
         ]
