@@ -25,6 +25,7 @@
 		    		<thead>
 		    			<tr>
 		    				<th>Tanggal</th>
+		    				<th>Jumlah Kepala Keluarga</th>
 		    				<th>Jumlah Rumah Tetap</th>
 		    				<th>Jumlah Rumah Kontrak</th>
 		    				<th>Jumlah Anak-anak</th>
@@ -35,7 +36,8 @@
 		    		</thead>
 		    		<tbody>
 		    			<tr>
-		    				<td>{{ \Carbon\Carbon::now() }}</td>
+							<td>{{ \Carbon\Carbon::now() }}</td>
+							<td>{{ $jumlahKepalaKeluarga }}</td>
 		    				<td>{{ $jumlahRumahTetap }}</td>
 		    				<td>{{ $jumlahRumahTidakTetap }}</td>
 		    				<td>{{ $jumlahAnak }}</td>
