@@ -49,13 +49,12 @@
                         <label for="type_file" class="col-md-3 col-form-label text-md-right">{{ __('Type File') }}</label>
 
                         <div class="col-md-7">
-                            <input id="type_file" type="text" class="form-control @error('type_file') is-invalid @enderror" name="type_file" value="{{ old('type_file') }}" required autocomplete="type_file" autofocus>
-
-                            @error('type_file')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
+                            <select class="form-control selec2bs4" name="type_file" id="type_file">
+                                <option value="Pilih">Pilih</option>
+                                <option value="Excel">Excel</option>
+                                <option value="Word">Word</option>
+                                <option value="Pdf">Pdf</option>
+                            </select>
                         </div>
                     </div>
 

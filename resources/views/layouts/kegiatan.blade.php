@@ -87,6 +87,7 @@
         <!-- Start gallery Area -->
         <section class="gallery-area section-gap">
             <div class="container">
+            <p>Kegiatan Seru di Kampung Kemuning</p>
                 <div class="row">
                     @foreach($kegiatan as $data) 
                     <div class="col-lg-4">

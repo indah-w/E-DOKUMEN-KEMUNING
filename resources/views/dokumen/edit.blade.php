@@ -47,11 +47,23 @@
 
                     <div class="form-group row">
                         <label for="type_file" class="col-md-3 col-form-label text-md-right">{{ __('Type File') }}</label>
+                        <div class="col-md-7">
+                            <select class="form-control selec2bs4" name="type_file" id="type_file">
+                                <option value="Pilih">Pilih</option>
+                                <option value="Word" @if($dokumen->type_file == "Word") selected @endif>Word</option>
+                                <option value="Excel" @if($dokumen->type_file == "Excel") selected @endif>Excel</option>
+                                <option value="Pdf" @if($dokumen->type_file == "Pdf") selected @endif>Pdf</option>
+                              </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="keterangan" class="col-md-3 col-form-label text-md-right">{{ __('Keterangan') }}</label>
 
                         <div class="col-md-7">
-                            <input id="type_file" type="text" class="form-control @error('type_file') is-invalid @enderror" name="type_file" value="{{ $dokumen->type_file }}" required autocomplete="type_file" autofocus>
+                            <input id="keterangan" type="text" class="form-control @error('keterangan') is-invalid @enderror" name="keterangan" value="{{ $dokumen->keterangan }}" required autocomplete="keterangan" autofocus>
 
-                            @error('type_file')
+                            @error('keterangan')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>

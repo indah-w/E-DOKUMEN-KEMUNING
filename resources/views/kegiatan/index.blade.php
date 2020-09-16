@@ -27,7 +27,7 @@
 		    		<thead>
 		    			<tr>
 		    				<th>Tanggal</th>
-		    				<th>ID Kegiatan</th>
+		    				<!-- <th>ID Kegiatan</th> -->
 		    				<th>Foto</th>
 		    				<th>Nama Kegiatan</th>
 		    				<th>Tanggal Kegiatan</th>
@@ -38,7 +38,7 @@
 		    			@foreach($kegiatan as $data)
 		    			<tr>
 		    				<td>{{ $data->created_at->toDateString() }}</td>
-		    				<td>{{ $data->id }}</td>
+		    				<!-- <td>{{ $data->id }}</td> -->
 		    				<td>{{ $data->foto }}</td>
 		    				<td>{{ $data->nama_kegiatan }}</td>
 		    				<td>{{ $data->tanggal_kegiatan }}</td>

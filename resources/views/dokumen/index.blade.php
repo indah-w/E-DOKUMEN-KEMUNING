@@ -32,6 +32,7 @@
 		    				<th>Nama Dokumen</th>
 		    				<th>Type File</th>
 		    				<th>Keterangan</th>
+							<th>Pembaharuan</th>
 		    				<th>Opsi</th>
 		    			</tr>
 		    		</thead>
@@ -44,6 +45,7 @@
 		    				<td>{{ $data->nama_dokumen }}</td>
                             <td>{{ $data->type_file }}</td>
                             <td>{{ $data->keterangan }}</td>
+							<td>{{ $data->updated_at->toDateString() }}</td>
 		    				<td>@include('partial.action', ['data' => $data, 'route'=>'dokumen'])</td>
 		    			</tr>
 		    			@endforeach

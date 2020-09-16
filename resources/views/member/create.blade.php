@@ -48,7 +48,7 @@
                         <label for="no_telepon" class="col-md-3 col-form-label text-md-right">{{ __('No Telepon') }}</label>
 
                         <div class="col-md-7">
-                            <input id="no_telepon" type="text" class="form-control @error('no_telepon') is-invalid @enderror" name="no_telepon" value="{{ old('no_telepon') }}" required autocomplete="no_telepon" autofocus>
+                            <input id="no_telepon" type="number" class="form-control @error('no_telepon') is-invalid @enderror" name="no_telepon" value="{{ old('no_telepon') }}" required autocomplete="no_telepon" autofocus>
 
                             @error('no_telepon')
                                 <span class="invalid-feedback" role="alert">
@@ -62,13 +62,11 @@
                         <label for="status_rumah" class="col-md-3 col-form-label text-md-right">{{ __('Status Rumah') }}</label>
 
                         <div class="col-md-7">
-                            <input id="status_rumah" type="text" class="form-control @error('status_rumah') is-invalid @enderror" name="status_rumah" value="{{ old('status_rumah') }}" required autocomplete="status_rumah" autofocus>
-
-                            @error('status_rumah')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
+                            <select class="form-control selec2bs4" name="status_rumah" id="status_rumah">
+                                <option value="Pilih">Pilih</option>
+                                <option value="Tetap">Tetap</option>
+                                <option value="Tidak Tetap">Tidak Tetap</option>
+                            </select>
                         </div>
                     </div>
 
@@ -76,7 +74,7 @@
                         <label for="jumlah_anak" class="col-md-3 col-form-label text-md-right">{{ __('Jumlah Anak') }}</label>
 
                         <div class="col-md-7">
-                            <input id="jumlah_anak" type="text" class="form-control @error('jumlah_anak') is-invalid @enderror" name="jumlah_anak" value="{{ old('jumlah_anak') }}" required autocomplete="jumlah_anak" autofocus>
+                            <input id="jumlah_anak" type="number" class="form-control @error('jumlah_anak') is-invalid @enderror" name="jumlah_anak" value="{{ old('jumlah_anak') }}" required autocomplete="jumlah_anak" autofocus>
 
                             @error('jumlah_anak')
                                 <span class="invalid-feedback" role="alert">
@@ -101,7 +99,7 @@
                         <label for="jumlah_biopori" class="col-md-3 col-form-label text-md-right">{{ __('Jumlah Biopori') }}</label>
 
                         <div class="col-md-7">
-                            <input id="jumlah_biopori" type="text" class="form-control @error('jumlah_biopori') is-invalid @enderror" name="jumlah_biopori" value="{{ old('jumlah_biopori') }}" required autocomplete="jumlah_biopori" autofocus>
+                            <input id="jumlah_biopori" type="number" class="form-control @error('jumlah_biopori') is-invalid @enderror" name="jumlah_biopori" value="{{ old('jumlah_biopori') }}" required autocomplete="jumlah_biopori" autofocus>
 
                             @error('jumlah_biopori')
                                 <span class="invalid-feedback" role="alert">

@@ -37,6 +37,10 @@ class DokumenController extends Controller
 
     public function edit(Dokumen $dokumen, $id) {
         $dokumen = Dokumen::find($id);
+        $dokumen->nama_dokumen = $request->nama_dokumen;
+        $dokumen->keterangan = $request->keterangan;
+        $dokumen->type_file = $request->type_file;
+        $dokumen->save();
         return view('dokumen.edit', compact('dokumen', 'status'));
     }
 

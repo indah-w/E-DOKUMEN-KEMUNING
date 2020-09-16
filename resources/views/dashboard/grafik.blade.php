@@ -1,6 +1,6 @@
 @extends('adminlte.layouts.app')
 
-@section('title', 'Grafik')
+@section('title', 'Grafik ')
 
 {{-- Custom CSS --}}
 @push('css')
@@ -28,7 +28,7 @@ $( document ).ready(function() {
         var dataPoints = [];
         var options = {
             title: {
-                text: "Report"
+                text: "Laporan"
             },
             data: [{
                 type: "column",
