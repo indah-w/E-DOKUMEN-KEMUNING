@@ -120,6 +120,15 @@
                                     <span>{{$data->lokasi}}</span>
                                 </li>										
                             </ul>
+                        </div>
+                        <div class="single-event-details">
+                            <h4>Sumber</h4>
+                            <ul class="mt-10">
+                                <li class="justify-content-between d-flex">
+                                    <span>Link Sumber :</span>
+                                    <span>{{$data->link}}</span>
+                                </li>										
+                            </ul>
                         </div>														
                     </div>
                     <div class="social-nav row no-gutters">

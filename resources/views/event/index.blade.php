@@ -30,7 +30,8 @@
 		    				<th>Nama Event</th>
                             <th>Tanggal Event</th>
                             <th>Harga Event</th>
-                            <th>Lokasi</th>
+							<th>Lokasi</th>
+							<th>Link</th>
                             <th>Uraian</th>
 							<th>Opsi</th>
 		    			</tr>
@@ -44,7 +45,8 @@
 		    				<td>{{ $data->nama_event }}</td>
 		    				<td>{{ $data->tanggal_event }}</td>
 							<td>{{ $data->harga_event }}</td>
-                            <td>{{ $data->lokasi }}</td>
+							<td>{{ $data->lokasi }}</td>
+							<td>{{ $data->link }}</td>
                             <td>{{ $data->keterangan }}</td>
 		    				<td>@include('partial.action', ['data' => $data, 'route'=>'event'])</td>
 		    			</tr>

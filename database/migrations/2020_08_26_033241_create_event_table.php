@@ -20,6 +20,7 @@ class CreateEventTable extends Migration
             $table->date('tanggal_event', 50); 
             $table->string('harga_event', 12);
             $table->string('lokasi', 30);
+            $table->string('link', 150);
             $table->text('keterangan', 30);
             $table->timestamps();
         });

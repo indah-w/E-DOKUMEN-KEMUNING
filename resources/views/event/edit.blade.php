@@ -88,6 +88,20 @@
                     </div>
 
                     <div class="form-group row">
+                        <label for="link" class="col-md-3 col-form-label text-md-right">{{ __('Link') }}</label>
+
+                        <div class="col-md-7">
+                            <input id="link" type="text" class="form-control @error('link') is-invalid @enderror" name="link" value="{{ $event->link }}" required autocomplete="link" autofocus>
+
+                            @error('link')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
                         <label for="keterangan" class="col-md-3 col-form-label text-md-right">{{ __('Uraian') }}</label>
 
                         <div class="col-md-7">
