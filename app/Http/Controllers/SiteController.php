@@ -46,7 +46,7 @@ class SiteController extends Controller
     }
 
     public function informasi()
-    {
+    { 
         return view('layouts.informasi');
     }
 
