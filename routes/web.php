@@ -20,6 +20,7 @@ Route::get('/sites/event', 'SiteController@event');
 Route::get('/sites/kegiatan', 'SiteController@kegiatan');
 Route::get('/sites/artikel', 'SiteController@artikel');
 Route::get('/sites/kontak', 'SiteController@kontak');
+Route::get('/dashboard/grafik', 'DashboardController@grafik');
 Route::get('/sites/eventdetail/{id}', 'SiteController@eventdetail')->name('event_detail');
 
 Route::get('/dashboard/buatanggota', function() {
