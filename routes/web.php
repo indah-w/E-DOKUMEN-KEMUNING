@@ -16,6 +16,7 @@ Route::get('/dashboard/grafik', 'DashboardController@grafik')->name('dashboard.g
 Route::get('/dashboard/data', 'DashboardController@data')->name('dashboard.data');
 Route::get('/beranda', 'SiteController@home');
 Route::get('/sites/tentang', 'SiteController@tentang');
+Route::get('/sites/informasi', 'SiteController@informasi');
 Route::get('/sites/event', 'SiteController@event');
 Route::get('/sites/kegiatan', 'SiteController@kegiatan');
 Route::get('/sites/artikel', 'SiteController@artikel');

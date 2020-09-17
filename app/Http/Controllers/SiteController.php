@@ -45,6 +45,11 @@ class SiteController extends Controller
         return view('layouts.artikel', compact('artikel'));
     }
 
+    public function informasi()
+    {
+        return view('layouts.informasi');
+    }
+
     public function kontak()
     {
         return view('layouts.kontak');

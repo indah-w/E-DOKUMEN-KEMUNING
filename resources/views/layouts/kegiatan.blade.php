@@ -60,7 +60,7 @@
                   <li><a href="{{url('sites/event')}}">Events</a></li>
                   <li><a href="{{url('sites/kegiatan')}}">Kegiatan</a></li>
                   <li><a href="{{url('sites/artikel')}}">Artikel</a></li>	
-                  <li><a href="{{url('dashboard/grafik')}}">Informasi</a></li>					          					          		          
+                  <li><a href="{{url('sites/informasi')}}">Informasi</a></li>					          					          		          
                   <li><a href="{{url('sites/kontak')}}">Kontak</a></li>
                 </ul>
               </nav><!-- #nav-menu-container -->		    		

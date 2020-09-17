@@ -60,7 +60,7 @@
                   <li><a href="{{url('sites/event')}}">Events</a></li>
                   <li><a href="{{url('sites/kegiatan')}}">Kegiatan</a></li>
                   <li><a href="{{url('sites/artikel')}}">Artikel</a></li>
-                  <li><a href="{{url('dashboard/grafik')}}">Informasi</a></li>	
+                  <li><a href="{{url('sites/informasi')}}">Informasi</a></li>	
                   <li><a href="{{url('sites/kontak')}}">Kontak</a></li>
                 </ul>
               </nav><!-- #nav-menu-container -->		    		
@@ -105,7 +105,7 @@
         <footer class="footer-area section-footer">
             <div class="container">
                 <div class="row">
-                                                                
+                            <div id="chartContainer" style="height: 370px; width: 100%;"></div>
                 </div>
                 <div class="footer-bottom row align-items-center justify-content-between">
                     <p class="footer-text m-0 col-lg-6 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -135,7 +135,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Kampu
         <script src="{{asset('/frontend')}}/js/owl.carousel.min.js"></script>									
         <script src="{{asset('/frontend')}}/js/mail-script.js"></script>	
         <script src="{{asset('/frontend')}}/js/main.js"></script>	
-        @push('js')
 <!-- DataTables -->
 <script src="{{ asset('js/jquery.canvasjs.min.js') }}"></script>
 <script>
@@ -156,6 +155,5 @@ $( document ).ready(function() {
     });
 });
 </script>
-@endpush
     </body>
 </html>
