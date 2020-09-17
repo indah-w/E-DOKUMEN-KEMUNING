@@ -44,6 +44,13 @@ class DokumenController extends Controller
         return view('dokumen.edit', compact('dokumen', 'status'));
     }
 
+    public function download($id){
+        $dokumen = Dokumen::find($id);
+        $destinationPath = public_path() . DIRECTORY_SEPARATOR . 'img';
+        $filePath = $destinationPath . '/' . $dokumen->file;
+        return response()->download($filePath);
+    }
+
     public function update(Request $request, Dokumen $dokumen) {
 
         $dokumen->update($request->all());

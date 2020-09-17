@@ -45,6 +45,7 @@ Route::resource('kegiatan', 'KegiatanController');
 Route::resource('event', 'EventController');
 
 //Dokumen
+Route::get('/dokumen/download/{id}', 'DokumenController@download')->name('dokumen.download');
 Route::resource('dokumen', 'DokumenController');
 
 //Artikel
