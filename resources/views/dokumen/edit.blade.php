@@ -16,7 +16,7 @@
 		    <div class="card-body">
 		    	<form action="{{ route('dokumen.update', $dokumen->id) }}" method="POST" enctype="multipart/form-data">
                     {{ method_field('PATCH') }}
-		    		@csrf
+                    @csrf
                     <div class="form-group row">
                         <label for="file" class="col-md-3 col-form-label text-md-right">{{ __('File') }}</label>
 
