@@ -93,7 +93,7 @@
                             @foreach($artikel as $data)
                             <div class="col-12 col-md-6">
                                 <a href="{{url('sites/artikeldetail')}}"><h4>{{$data->nama_artikel}}</h4></a>
-                                <img class="img-fluid" src="/img/{{$data->foto}}" alt=""> 
+                                <img class="img-fluid" src="/img/{{$data->foto}}" width="400px;" height="400px;" alt=""> 
                                 <br/>
                                 <h5 style="margin-top: 20px">Penulis : {{$data->pembuat}}</h5>
                                 <p>{{$data->tanggal_artikel}}</p>

@@ -68,15 +68,11 @@
 <script src="{{ asset('assets/plugins/datatables-buttons/js/buttons.print.min.js') }}"></script>
 
 <script>
-    $(function () {
+   $(function () {
       $("#example1").DataTable({
-      	dom: 'Bfrtip',
-        buttons: [
-            ""
-        ],
         "columnDefs": [
             { "width": "10%", "targets": -1 }
-        ],
+        ]
       });
     });
 </script>

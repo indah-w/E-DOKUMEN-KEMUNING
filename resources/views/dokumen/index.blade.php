@@ -74,13 +74,9 @@
 <script>
     $(function () {
       $("#example1").DataTable({
-      	dom: 'Bfrtip',
-        buttons: [
-            ""
-        ],
         "columnDefs": [
             { "width": "10%", "targets": -1 }
-        ],
+        ]
       });
     });
 </script>

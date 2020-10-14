@@ -1,5 +1,5 @@
 @extends('adminlte.layouts.app')
-@section('title', 'List User')
+@section('title', '')
     
 @push('css')
 <!-- DataTables -->
@@ -9,37 +9,16 @@
 
 @section('breadcrumb')
 <li class="breadcrumb-item"><a href="#">Home</a></li>
-<li class="breadcrumb-item active">User</li>
+
 @endsection
 @section('content')
 <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="col-md-12">
         <div class="card">
-            <div class="card-header header-primary">User</div>
 
-            <div class="card-body">
-                @include('partial.alert')
-                <p><a href="#" class="btn btn-primary">Tambah Data</a></p>
-                <table class="table" id="example1">
-                    <thead>
-                        <tr>
-                        <th scope="col">Nama</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Role</th>
-                        <th scope="col">Aksi</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="card-body ">
+                <h2>Selamat Datang Di Sistem Elektronik Dokumen Sistem Kampung Hijau Kemuning </h2>
             </div>
         </div>
       </div>

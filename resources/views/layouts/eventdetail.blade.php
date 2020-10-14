@@ -126,7 +126,7 @@
                             <ul class="mt-10">
                                 <li class="justify-content-between d-flex">
                                     <span>Link Sumber :</span>
-                                    <span>{{$data->link}}</span>
+                                  <a href="{{$data->link}}">{{$data->link}}</a>  
                                 </li>										
                             </ul>
                         </div>														
