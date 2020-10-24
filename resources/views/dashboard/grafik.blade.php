@@ -14,7 +14,8 @@
 @section('content')
 <div class="row container-fluid d-flex justify-content-center">
 	<div class="col-md-12">
-		<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+        <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+        <img src="" alt="">
 	</div>
 </div>
 @endsection
@@ -28,7 +29,7 @@ $( document ).ready(function() {
         var dataPoints = [];
         var options = {
             title: {
-                text: "Laporan"
+                text: "Laporan Data Member"
             },
             data: [{
                 type: "column",
@@ -40,3 +41,4 @@ $( document ).ready(function() {
 });
 </script>
 @endpush
+

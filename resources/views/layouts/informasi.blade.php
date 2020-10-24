@@ -105,7 +105,7 @@
         <footer class="footer-area section-footer">
             <div class="container">
                 <div class="row">
-                            <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+                    											
                 </div>
                 <div class="footer-bottom row align-items-center justify-content-between">
                     <p class="footer-text m-0 col-lg-6 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->

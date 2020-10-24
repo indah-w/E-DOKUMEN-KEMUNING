@@ -88,7 +88,10 @@
         <section class="contact-page-area section-gap">
             <div class="container">
                 <div class="row">
-                    <div class="map-wrap" style="width:100%; height: 445px;" id="map"></div>
+                    <div style="margin-bottom:100px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.12931963969!2d106.57549191431055!3d-6.246684262903226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fd0ad45ea673%3A0x2bdcfdc8e45197ba!2sKampung%20Hijau%20Kemuning!5e0!3m2!1sen!2sid!4v1603555449668!5m2!1sen!2sid" width="1100" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                   
                     <div class="col-lg-4 d-flex flex-column address-wrap">
                         <div class="single-contact-address d-flex flex-row">
                             <div class="icon">
@@ -103,7 +106,7 @@
                         </div>
                         <div class="single-contact-address d-flex flex-row">
                             <div class="icon">
-                                <span class="lnr lnr-phone-handset"></span>
+                                <a href="https://api.whatsapp.com/send?phone=081517213913"><span class="lnr lnr-phone-handset"></span></a> 
                             </div>
                             <div class="contact-details">
                                 <h5>+6287788079029</h5>
@@ -118,28 +121,10 @@
                                 <h5>kampunghijaukemuning@gmail.com</h5>
                                 <p></p>
                             </div>
-                        </div>														
+                        </div>	
+                        													
                     </div>
-                    <div class="col-lg-8">
-                        <form class="form-area contact-form text-right" id="myForm" action="mail.php" method="post">
-                            <div class="row">	
-                                <div class="col-lg-6 form-group">
-                                    <input name="name" placeholder="Nama" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control" required="" type="text">
-                                
-                                    <input name="email" placeholder="Alamat email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required="" type="email">
-
-                                    <input name="subject" placeholder="Subjek" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="common-input mb-20 form-control" required="" type="text">
-                                </div>
-                                <div class="col-lg-6 form-group">
-                                    <textarea class="common-textarea form-control" name="message" placeholder="Pesan" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Messege'" required=""></textarea>				
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="alert-msg" style="text-align: left;"></div>
-                                    <button class="genric-btn primary" style="float: right;">Kirim Pesan</button>											
-                                </div>
-                            </div>
-                        </form>	
-                    </div>
+                    
                 </div>
             </div>	
         </section>
