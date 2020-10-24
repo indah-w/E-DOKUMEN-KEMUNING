@@ -16,7 +16,7 @@
     <div class="row justify-content-center">
       <div class="col-md-12">
         <div class="card">
-
+          
             <div class="card-body ">
                 <h2>Selamat Datang Di Sistem Elektronik Dokumen Sistem Kampung Hijau Kemuning </h2>
             </div>

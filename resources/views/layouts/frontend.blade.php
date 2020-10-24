@@ -7,7 +7,7 @@
     <!-- Favicon-->
     <link rel="shortcut icon" href="{{asset('/frontend')}}/img/fav.png">
     <!-- Author Meta -->
-    <meta name="author" content="colorlib">
+    <meta name="author" content="#">
     <!-- Meta Description -->
     <meta name="description" content="">
     <!-- Meta Keyword -->
@@ -40,13 +40,13 @@
                   <div class="row">
                       <div class="col-lg-6 col-sm-6 col-8 header-top-left no-padding">
                           <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="{{url('https://web.facebook.com/?_rdc=1&_rdr')}}"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="{{url('https://twitter.com/?lang=en')}}"><i class="fa fa-twitter"></i></a></li>
                           </ul>			
                       </div>
                       <div class="col-lg-6 col-sm-6 col-4 header-top-right no-padding">
-                          <a href="tel:+953 012 3654 896"><span class="lnr lnr-phone-handset"></span> <span class="text">+6287788079029</span></a>
-                          <a href="mailto:support@colorlib.com"><span class="lnr lnr-envelope"></span> <span class="text">kampunghijaukemuning@gmail.com</span></a>			
+                          <a href="#"><span class="lnr lnr-phone-handset"></span> <span class="text">+6287788079029</span></a>
+                          <a href="{{url('https://accounts.google.com/login')}}"><span class="lnr lnr-envelope"></span> <span class="text">kampunghijaukemuning@gmail.com</span></a>			
                       </div>
                   </div>			  					
               </div>
@@ -242,8 +242,8 @@
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> Kampung Hijau Kemuning | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by indahwdyst
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                     <div class="col-lg-6 col-sm-12 footer-social">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="{{url('https://web.facebook.com/?_rdc=1&_rdr')}}"><i class="fa fa-facebook"></i></a>
+                        <a href="{{url('https://twitter.com/?lang=en')}}"><i class="fa fa-twitter"></i></a>
                     </div>
                 </div>						
             </div>

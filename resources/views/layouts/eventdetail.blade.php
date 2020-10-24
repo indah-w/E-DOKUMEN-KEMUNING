@@ -123,7 +123,7 @@
                         </div>
                         <div class="single-event-details">
                             <h4>Sumber</h4>
-                            <ul class="mt-10">
+                            <ul class="lg-10">
                                 <li class="justify-content-between d-flex">
                                     <span>Link Sumber :</span>
                                   <a href="{{$data->link}}">{{$data->link}}</a>  

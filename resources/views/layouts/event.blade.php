@@ -107,10 +107,7 @@
 					
 					<div class="social-nav row no-gutters">
                         <div class="row-lg-6 row-md-6 ">
-                            <ul class="focials">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            </ul>                          
+                                                 
                             </div>
                     </div>
 				</div>
