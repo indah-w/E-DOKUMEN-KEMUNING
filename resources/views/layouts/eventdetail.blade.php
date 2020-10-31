@@ -129,8 +129,40 @@
                                   <a href="{{$data->link}}">{{$data->link}}</a>  
                                 </li>										
                             </ul>
-                        </div>														
+                        </div>		
+                        
+
+                        <form action="{{route('komentar.store')}}" method="POST" >
+                            @csrf
+                            <input type="hidden" name="event_id" value="{{$data->id}}">
+                            <div class="form-group row">
+                                <h4>Komentar</h4>
+        
+                                <div class="col-md-12">
+                                    <textarea id="komentar" type="text" class="form-control @error('komentar') is-invalid @enderror" name="komentar" value="{{ old('komentar') }}" required autocomplete="komentar" autofocus> </textarea>
+        
+                                    @error('komentar')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                            </div>
+                            <button type="submit" >Submit</button>
+                        </form>
+
+                        <ul>
+                            @foreach ($data->komentars as $item)
+                                <li>Komentar : {{$item->komentar}}</li>
+                            @endforeach
+                        </ul>
+                        
+                        
+                        
                     </div>
+
+                    
+
                     <div class="social-nav row no-gutters">
                         <div class="row-lg-6 row-md-6 ">
                             <ul class="focials">

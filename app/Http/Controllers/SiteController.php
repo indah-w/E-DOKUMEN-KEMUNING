@@ -23,7 +23,7 @@ class SiteController extends Controller
 
     public function event()
     {
-        $event = Event::all();
+        $event = Event::whereDate('tanggal_event', '>=', \Carbon\Carbon::now())->get();
         return view('layouts.event', compact('event'));
     }
 

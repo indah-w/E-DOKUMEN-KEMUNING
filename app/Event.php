@@ -10,4 +10,8 @@ class Event extends Model
 
     protected $fillable = [
         'foto','nama_event', 'tanggal_event', 'harga_event', 'lokasi', 'link','keterangan'];
+    
+        public function komentars(){
+            return $this->hasMany('App\Komentar');
+        }
 }

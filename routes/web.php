@@ -55,6 +55,9 @@ Route::resource('artikel', 'ArtikelController');
 //User
 Route::resource('user', 'UserController');
 
+//Komentar
+Route::resource('komentar', 'KomentarController');
+
 
 // Route::get('/crud', function () {
 //     return view('adminlte.crud.index');
