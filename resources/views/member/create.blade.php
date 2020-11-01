@@ -15,7 +15,35 @@
 		    </div>
 		    <div class="card-body">
 		    	<form action="{{ route('member.store') }}" method="POST">
-		    		@csrf
+                    @csrf
+                    <div class="form-group row">
+                        <label for="no_kk" class="col-md-3 col-form-label text-md-right">{{ __('No. Kartu Keluarga') }}</label>
+
+                        <div class="col-md-7">
+                            <input id="no_kk" type="number" class="form-control @error('no_kk') is-invalid @enderror" name="no_kk" value="{{ old('no_kk') }}" required autocomplete="no_kk" autofocus>
+
+                            @error('no_kk')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="no_ktp" class="col-md-3 col-form-label text-md-right">{{ __('No. KTP') }}</label>
+
+                        <div class="col-md-7">
+                            <input id="no_ktp" type="number" class="form-control @error('no_ktp') is-invalid @enderror" name="no_ktp" value="{{ old('no_ktp') }}" required autocomplete="no_ktp" autofocus>
+
+                            @error('no_ktp')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                    </div>
+
                     <div class="form-group row">
                         <label for="nama_kartu_keluarga" class="col-md-3 col-form-label text-md-right">{{ __('Nama Kartu Keluarga') }}</label>
 

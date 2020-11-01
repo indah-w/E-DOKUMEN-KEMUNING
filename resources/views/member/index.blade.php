@@ -26,7 +26,9 @@
 		    		<thead>
 		    			<tr>
 		    				<th>Tanggal</th>
-		    				<th>ID Warga</th>
+							{{-- <th>ID Warga</th> --}}
+							<th>No. Kartu Keluarga</th>
+							<th>No. KTP</th>
 		    				<th>Nama Kepala Keluarga</th>
 		    				<th>Alamat</th>
 							<th>No Telepon</th>
@@ -43,7 +45,9 @@
 		    			@foreach($member as $data)
 		    			<tr>
 		    				<td>{{ $data->created_at->toDateString() }}</td>
-		    				<td>{{ $data->id }}</td>
+							{{-- <td>{{ $data->id }}</td> --}}
+							<td>{{ $data->no_kk }}</td>
+							<td>{{ $data->no_ktp }}</td>
 		    				<td>{{ $data->nama_kartu_keluarga }}</td>
 		    				<td>{{ $data->alamat }}</td>
 							<td>{{ $data->no_telepon }}</td>
