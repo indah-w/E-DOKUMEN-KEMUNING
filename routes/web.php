@@ -58,6 +58,9 @@ Route::resource('user', 'UserController');
 //Komentar
 Route::resource('komentar', 'KomentarController');
 
+//Komart
+Route::post('komart', 'KomartController@store')->name('komart.store');
+
 
 // Route::get('/crud', function () {
 //     return view('adminlte.crud.index');
