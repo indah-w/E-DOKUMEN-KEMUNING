@@ -135,27 +135,30 @@
                         <form action="{{route('komentar.store')}}" method="POST" >
                             @csrf
                             <input type="hidden" name="event_id" value="{{$data->id}}">
-                            <div class="form-group row">
+                            <div class="single-event-details">
                                 <h4>Komentar</h4>
         
                                 <div class="col-md-12">
-                                    <textarea id="komentar" type="text" class="form-control @error('komentar') is-invalid @enderror" name="komentar" value="{{ old('komentar') }}" required autocomplete="komentar" autofocus> </textarea>
+                                    <textarea style="margin-top: 10px;" id="komentar" type="text" class="form-control @error('komentar') is-invalid @enderror" name="komentar" value="{{ old('komentar') }}" required autocomplete="komentar" autofocus> </textarea>
         
                                     @error('komentar')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
                                     @enderror
+                                    <button style="margin-top: 20px;" type="submit" >Submit</button>
+                                    <ul>
+                                        @foreach ($data->komentars as $item)
+                                            <li style="margin-top: 10px; margin-bottom: 10px;">Komentar : {{$item->komentar}}</li>
+                                        @endforeach
+                                    </ul>
                                 </div>
                             </div>
-                            <button type="submit" >Submit</button>
+
+                            
                         </form>
 
-                        <ul>
-                            @foreach ($data->komentars as $item)
-                                <li>Komentar : {{$item->komentar}}</li>
-                            @endforeach
-                        </ul>
+                        
                         
                         
                         
