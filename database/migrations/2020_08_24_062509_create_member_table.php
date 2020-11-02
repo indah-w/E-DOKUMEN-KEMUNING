@@ -15,8 +15,8 @@ class CreateMemberTable extends Migration
     {
         Schema::create('member', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('no_kk', 30);
-            $table->string('no_ktp', 30);
+            $table->string('no_kk', 30)->unique;
+            $table->string('no_ktp', 30)->unique;
             $table->string('nama_kartu_keluarga', 30);
             $table->string('alamat', 50); 
             $table->string('no_telepon', 12);

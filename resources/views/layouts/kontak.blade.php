@@ -106,10 +106,10 @@
                         </div>
                         <div class="single-contact-address d-flex flex-row">
                             <div class="icon">
-                                <a href="https://api.whatsapp.com/send?phone=081517213913"><span class="lnr lnr-phone-handset"></span></a> 
+                                <a href="https://api.whatsapp.com/send?phone=087788079029"><span class="lnr lnr-phone-handset"></span></a> 
                             </div>
                             <div class="contact-details">
-                                <h5>+6287788079029</h5>
+                                <a href="https://api.whatsapp.com/send?phone=087788079029"><h5>+6287788079029</h5></a> 
                                 <p></p>
                             </div>
                         </div>

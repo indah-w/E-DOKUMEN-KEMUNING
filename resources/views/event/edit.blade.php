@@ -19,7 +19,6 @@
 		    		@csrf
                     <div class="form-group row">
                         <label for="foto" class="col-md-3 col-form-label text-md-right">{{ __('Foto') }}</label>
-
                         <div class="col-md-7">
                             <input id="foto" type="file" accept="image/x-png,image/gif,image/jpeg" class="form-control @error('foto') is-invalid @enderror" name="foto" value="{{ old('foto') }}" autocomplete="foto" autofocus>
 
@@ -29,7 +28,14 @@
                                 </span>
                             @enderror
                         </div>
+
                     </div>
+                    <div class="form-group row">
+                        <div style="margin-left: 370px;" class="col-md-7">
+                            <img src="/img/{{$event->foto}}" width="200px;" alt="">
+                        </div>
+                    </div>
+
 
                     <div class="form-group row">
                         <label for="nama_event" class="col-md-3 col-form-label text-md-right">{{ __('Nama Event') }}</label>

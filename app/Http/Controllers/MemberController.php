@@ -17,6 +17,11 @@ class MemberController extends Controller
     }
 
     public function store(Request $request) {
+        $validatedData = $request->validate([
+            'no_kk' => 'required|unique:member,no_kk',
+            'no_ktp' => 'required|unique:member,no_ktp',
+            // 'body' => 'required',
+        ]);
         Member::create($request->all());
         return redirect()->route('member.index')->with('status', 'Member Stored!!!')->with('success', true);
     }

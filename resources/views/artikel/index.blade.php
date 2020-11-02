@@ -40,7 +40,7 @@
 		    			<tr>
 		    				<td>{{ $data->created_at->toDateString() }}</td>
 		    				<td>{{ $data->id }}</td>
-		    				<td>{{ $data->foto }}</td>
+		    				<td><img src="img/{{$data->foto}}" width="200px;" alt=""></td>
 		    				<td>{{ $data->pembuat }}</td>
 		    				<td>{{ $data->nama_artikel }}
                             <td>{{ $data->tanggal_artikel }}

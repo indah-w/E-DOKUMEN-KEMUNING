@@ -32,6 +32,12 @@
                     </div>
 
                     <div class="form-group row">
+                        <div style="margin-left: 370px;" class="col-md-7">
+                            <img src="/img/{{$artikel->foto}}" width="200px;" alt="">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
                         <label for="pembuat" class="col-md-3 col-form-label text-md-right">{{ __('Pembuat') }}</label>
 
                         <div class="col-md-7">

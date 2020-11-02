@@ -39,7 +39,7 @@
 		    			<tr>
 		    				<td>{{ $data->created_at->toDateString() }}</td>
 		    				<!-- <td>{{ $data->id }}</td> -->
-		    				<td>{{ $data->foto }}</td>
+		    				<td><img src="img/{{$data->foto}}" width="200px;" alt=""></td>
 		    				<td>{{ $data->nama_kegiatan }}</td>
 		    				<td>{{ $data->tanggal_kegiatan }}</td>
 		    				<td>@include('partial.action', ['data' => $data, 'route'=>'kegiatan'])</td>
